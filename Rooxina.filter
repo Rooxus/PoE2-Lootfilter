@@ -179,9 +179,22 @@ Show # Maps - Tablet (Tower Items)
   MinimapIcon 0 White Circle
   PlayEffect White
 
+### Trials
+Show # Trials - Ultimatum
+  BaseType "Ultimatum"
+  SetFontSize 45
+  MinimapIcon 0 White Circle
+  PlayEffect White
+
+Show # Trials - Ultimatum
+  BaseType "Djinn"
+  SetFontSize 45
+  MinimapIcon 0 White Circle
+  PlayEffect White
+
 # Rooxina - Show all rarities
 Show # Normal - Rooxina
-  BaseType "Sceptre" "Solar Amulet" "Expert Wicker Tiara" "Expert Hexer's Robe" "Expert Sombre Gloves" "Expert Wrapped Sandals" "Expert Antler Focus"
+  BaseType "Solar Amulet" "Expert Wicker Tiara" "Expert Hexer's Robe" "Expert Sombre Gloves" "Expert Wrapped Sandals" "Expert Antler Focus"
   SetFontSize 45
   MinimapIcon 2 Blue Square
   PlayEffect Blue
@@ -230,7 +243,7 @@ Hide # Normal - Flasks - 64 +
   ItemLevel > 64
   Rarity Normal
   Class "Flask"
-  SetFontSize 15
+  SetFontSize 30
 
 Show # Normal - Flasks
   Rarity Normal
@@ -243,7 +256,7 @@ Hide # Normal - 64+
   Rarity Normal
   BaseType "Advanced"
   SetTextColor 70 70 70            # darkgrey (hide)
-  SetFontSize 10
+  SetFontSize 30
 
 Show
   Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
@@ -261,7 +274,7 @@ Hide # Magic - Flasks - 64 +
   ItemLevel > 64
   Rarity Magic
   Class "Life Flasks" "Mana Flasks"
-  SetFontSize 15
+  SetFontSize 30
 
 Show # Magic - all
   Rarity Magic
