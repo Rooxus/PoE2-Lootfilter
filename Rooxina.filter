@@ -188,7 +188,7 @@ Show # Normal - Rooxina
 
 ### Rare
 Show # Rare - all
-  Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow"
+  Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   Rarity Rare
   SetFontSize 35
   MinimapIcon 2 Yellow Circle
@@ -238,7 +238,7 @@ Show # Normal - Flasks
   SetFontSize 30
 
 Hide # Normal - 64+
-  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow"
+  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   ItemLevel > 64
   Rarity Normal
   BaseType "Advanced"
@@ -246,7 +246,7 @@ Hide # Normal - 64+
   SetFontSize 10
 
 Show
-  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow"
+  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   Rarity Normal
   SetFontSize 30
 

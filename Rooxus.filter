@@ -188,7 +188,7 @@ Show # Maps - Tablet (Tower Items)
 
 ### Rare
 Show # Rare - all
-  Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow"
+  Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   Rarity Rare
   SetFontSize 35
   MinimapIcon 2 Yellow Circle
