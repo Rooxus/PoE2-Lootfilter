@@ -58,6 +58,13 @@ Show # Currency - Breachstones
 	MinimapIcon 0 Purple Star
 	PlayEffect Purple
 
+Show # Currency - Expedition Logbook
+  Class "Expedition Logbook"
+	SetFontSize 45
+	MinimapIcon 0 Purple Star
+	PlayEffect Purple
+
+
 Show # Currency - Splinters-High
   BaseType "Splinter of Uul-Netol" "Splinter of Chayula" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Crescent Splinter"
 	SetFontSize 45
