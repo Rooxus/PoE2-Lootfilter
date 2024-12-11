@@ -224,7 +224,7 @@ Hide # Normal - Flasks - 64 +
 
 Show # Normal - Flasks
   Rarity Normal
-  Class "Flask"
+  Class "Life Flasks" "Mana Flasks"
   SetFontSize 30
 
 Hide # Normal - 64+
@@ -250,7 +250,7 @@ Show # Magic - 64+
 Hide # Magic - Flasks - 64 +
   ItemLevel > 64
   Rarity Magic
-  Class "Flask"
+  Class "Life Flasks" "Mana Flasks"
   SetFontSize 15
 
 Show # Magic - all
