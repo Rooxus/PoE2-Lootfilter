@@ -89,8 +89,18 @@ Show # Currency - Catch all
   SetFontSize 45
 
 ### Salvage
-Show # Salvage - Quality 1+
-  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Wands" "Staves" "Sceptres"
+Show # Salvage - Quality - Armour
+  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus"
+  Quality > 1
+  SetFontSize 45
+
+Show # Salvage - Quality - Caster
+  Class  "Wands" "Staff" "Sceptres"
+  Quality > 1
+  SetFontSize 45
+
+Show # Salvage - Quality - Melee/Ranged
+  Class "Staves" "Sceptres" "Mace" "Bow" "Crossbow"
   Quality > 1
   SetFontSize 45
 
