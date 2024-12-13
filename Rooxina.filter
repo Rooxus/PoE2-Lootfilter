@@ -200,11 +200,22 @@ Show # Trials - Ultimatum
   PlayEffect White
 
 # Rooxina - Show all rarities
-Show # Normal - Rooxina
-  BaseType "Solar Amulet" "Expert Wicker Tiara" "Expert Hexer's Robe" "Expert Sombre Gloves" "Expert Wrapped Sandals" "Expert Antler Focus"
+Show # Normal - Rooxina - T1
+  BaseType "Solar Amulet" "Expert Feathered Tiara" "Expert Hexer's Robe" "Expert Intricate Gloves" "Expert Feathered Sandals" "Expert Plumed Focus"
+  SetFontSize 45
+  MinimapIcon 2 Blue Star
+  PlayEffect Blue
+
+Show # Normal - Rooxina - T2
+  BaseType "Expert Chain Tiara" "Expert Keth Raiment" "Expert Jewelled Gloves" "Expert Silk Slippers" "Expert Crystal Focus"
+  SetFontSize 45
+  MinimapIcon 2 Blue Diamond
+  PlayEffect Blue
+
+Show # Normal - Rooxina - T2
+  BaseType "Expert Wicker Tiara" "Expert Sombre Gloves" "Expert Wrapped Sandals" "Expert Antler Focus"
   SetFontSize 45
   MinimapIcon 2 Blue Square
-  PlayEffect Blue
 
 ### Rare
 Show # Rare - all
