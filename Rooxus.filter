@@ -2,7 +2,7 @@
 Show # Unique
   Rarity Unique
   SetFontSize 45
-  MinimapIcon 1 Pink Star
+  MinimapIcon 0 Pink Star
   PlayEffect Pink
 
 ### Currency
@@ -49,7 +49,7 @@ Show # Currency - Essences - High
 Show # Currency - Essences - low
   BaseType "Essence of the Body" "Essence of the Mind" "Essence of Enhancement" "Essence of Torment" "Essence of Flames" "Essence of Ice" "Essence of Electricity" "Essence of Ruin" "Essence of Battle" "Essence of Sorcery" "Essence of Haste" "Essence of the Infinite"
   SetFontSize 45
-  MinimapIcon 2 White Square
+  MinimapIcon 0 White Square
   PlayEffect White
 
 Show # Currency - Breachstones
@@ -143,8 +143,7 @@ Show # Gems - Support
 ### Maps
 Show # Maps - Red High
 	Class "Waystones"
-	WaystoneTier >= 11
-	WaystoneTier <= 13
+	WaystoneTier >= 13
 	SetFontSize 45
   MinimapIcon 0 Red Star
   PlayEffect Red
@@ -203,7 +202,7 @@ Show # Trials - Ultimatum
 # Show # Normal - Rooxina
 #   BaseType "Solar Amulet" "Expert Wicker Tiara" "Expert Hexer's Robe" "Expert Sombre Gloves" "Expert Wrapped Sandals" "Expert Antler Focus"
 #   SetFontSize 45
-#   MinimapIcon 2 Blue Square
+#   MinimapIcon 0 Blue Square
 #   PlayEffect Blue
 
 ### Rare
@@ -211,7 +210,7 @@ Show # Rare - all
   Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   Rarity Rare
   SetFontSize 35
-  MinimapIcon 2 Yellow Circle
+  MinimapIcon 0 Yellow Circle
   PlayEffect Yellow
 
 ### Misc
@@ -237,7 +236,7 @@ Show # Jewelery - Belts
 Show # Jewels
   Class "Jewel"
   SetFontSize 45
-  MinimapIcon 2 Blue Circle
+  MinimapIcon 0 Blue Circle
   PlayEffect Blue
 
 ### Normal
