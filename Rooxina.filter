@@ -12,84 +12,90 @@ Show # Currency - Very Valuable
   MinimapIcon 0 White Star
   PlayEffect White
 
-Show # Currency - Very Valuable
-  BaseType "Chaos Orb" "Exalted Orb" "Orb of Alchemy" "Orb of Chance" "Vaal Orb" "Regal Orb" "Artificer's Orb" "Arcanist's Etcher" "Glassblower's Bauble" "Lesser Jeweller's Orb"
+Show # Currency - Valuable
+  BaseType "Chaos Orb" "Exalted Orb" "Orb of Alchemy" "Orb of Chance" "Lesser Jeweller's Orb"
   SetFontSize 45
-  MinimapIcon 0 White Diamond
+  MinimapIcon 1 White Diamond
   PlayEffect White
 
-Show # Currency - Very Valuable
+Show # Currency - Normal
+  BaseType "Vaal Orb" "Regal Orb" "Artificer's Orb" "Arcanist's Etcher" "Glassblower's Bauble" "Chance Shard"
+  SetFontSize 45
+  MinimapIcon 2 White Square
+  PlayEffect White
+
+Show # Currency - Low
   BaseType "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation"
   SetFontSize 45
-  MinimapIcon 0 White Square
+  MinimapIcon 2 White Circle
   PlayEffect White
+
+Show # Currency - Very Low
+  Class "Currency"
+  BaseType "Scroll of Wisdom" "Transmutation Shard"
+  SetFontSize 30
 
 Show # Currency - Gold
   Class "Currency"
   BaseType "Gold"
   SetFontSize 30
 
-Show # Currency - lows
-  Class "Currency"
-  BaseType "Scroll of Wisdom" "Transmutation Shard"
-  SetFontSize 30
-
 Show # Currency - Socketable (Runes)
   Class "Socketable"
   SetFontSize 45
-  MinimapIcon 0 White Circle
+  MinimapIcon 2 White Circle
   PlayEffect White
 
 Show # Currency - Essences - High
   BaseType "Greater Essence of the Body" "Greater Essence of the Mind" "Greater Essence of Enhancement" "Greater Essence of Torment" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of Electricity" "Greater Essence of Ruin" "Greater Essence of Battle" "Greater Essence of Sorcery" "Greater Essence of Haste" "Greater Essence of the Infinite"
   SetFontSize 45
-  MinimapIcon 0 White Diamond
+  MinimapIcon 1 White Diamond
   PlayEffect White
 
 Show # Currency - Essences - low
   BaseType "Essence of the Body" "Essence of the Mind" "Essence of Enhancement" "Essence of Torment" "Essence of Flames" "Essence of Ice" "Essence of Electricity" "Essence of Ruin" "Essence of Battle" "Essence of Sorcery" "Essence of Haste" "Essence of the Infinite"
   SetFontSize 45
-  MinimapIcon 0 White Square
+  MinimapIcon 2 White Square
   PlayEffect White
 
 Show # Currency - Breachstones
   Class "Breachstones"
 	SetFontSize 45
-	MinimapIcon 0 Purple Star
-	PlayEffect Purple
+	MinimapIcon 0 White Star
+	PlayEffect White
 
 Show # Currency - Expedition Logbook
   Class "Expedition Logbook"
 	SetFontSize 45
-	MinimapIcon 0 Purple Star
-	PlayEffect Purple
+	MinimapIcon 0 White Star
+	PlayEffect White
 
 
 Show # Currency - Splinters-High
   BaseType "Splinter of Uul-Netol" "Splinter of Chayula" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Crescent Splinter"
 	SetFontSize 45
-	MinimapIcon 0 Purple Square
-  PlayEffect Purple
+	MinimapIcon 2 White Square
+  PlayEffect White
 
 Show # Currency - Splinters-Low
 	BaseType "Simulacrum Splinter" "Breach Splinter" "Splinter of Xoph" "Splinter of Tul" "Splinter of Esh" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter"
 	SetFontSize 45
-	MinimapIcon 0 Purple Circle
-  PlayEffect Purple
+	MinimapIcon 2 White Circle
+  PlayEffect White
 
 Show # Currency - Catalysts
 	Class == "Stackable Currency"
 	BaseType == "Adaptive Catalyst" "Carapace Catalyst" "Chayula's Catalyst" "Esh's Catalyst" "Flesh Catalyst" "Neural Catalyst" "Reaver Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Tul's Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
 	SetFontSize 45
-	MinimapIcon 0 Purple Square
-  PlayEffect Purple
+	MinimapIcon 2 White Square
+  PlayEffect White
 
 Show # Currency - Distilled
 	Class == "Stackable Currency"
 	BaseType == "Distilled Despair" "Distilled Disgust" "Distilled Envy" "Distilled Fear" "Distilled Greed" "Distilled Guilt" "Distilled Ire" "Distilled Isolation" "Distilled Paranoia" "Distilled Suffering"
 	SetFontSize 45
-	MinimapIcon 0 Purple Square
-  PlayEffect Purple
+	MinimapIcon 2 White Square
+  PlayEffect White
 
 Show # Currency - Catch all
   Class "Currency"
@@ -119,116 +125,116 @@ Show # Salvage - Sockets 1
 Show # Gems - Spirit
   BaseType "Uncut Spirit Gem"
   SetFontSize 35
-  MinimapIcon 0 White Circle
-  PlayEffect White
+  MinimapIcon 2 Green Circle
+  PlayEffect Green
 
 Show # Gems - Skill
   BaseType "Uncut Skill Gem"
   SetFontSize 35
-  MinimapIcon 0 White Circle
-  PlayEffect White
+  MinimapIcon 2 Green Circle
+  PlayEffect Green
 
 Show # Gems - Support
   BaseType "Uncut Support Gem"
   SetFontSize 35
-  MinimapIcon 0 White Circle
-  PlayEffect White
+  MinimapIcon 2 Green Circle
+  PlayEffect Green
 
 Show # Gems - Support
   Class Gem
   SetFontSize 35
-  MinimapIcon 0 White Circle
-  PlayEffect White
+  MinimapIcon 2 Green Circle
+  PlayEffect Green
 
 ### Maps
-Show # Maps - Red High
+Show # Maps - 13+
 	Class "Waystones"
 	WaystoneTier >= 13
 	SetFontSize 45
   MinimapIcon 0 Red Star
   PlayEffect Red
 
-Show # Maps - Red Low
+Show # Maps - 11-13
 	Class "Waystones"
 	WaystoneTier >= 11
 	WaystoneTier <= 13
 	SetFontSize 45
-  MinimapIcon 0 Red Diamond
+  MinimapIcon 1 Red Diamond
   PlayEffect Red
 
-Show # Maps - Yellow
+Show # Maps - 6-10
 	Class "Waystones"
 	WaystoneTier >= 6
 	WaystoneTier <= 10
 	SetFontSize 45
-  MinimapIcon 0 Red Square
+  MinimapIcon 2 Red Square
   PlayEffect Red
 
-Show # Maps - White
+Show # Maps - 1-5
 	Class "Waystones"
 	WaystoneTier >= 1
 	WaystoneTier <= 5
 	SetFontSize 45
-  MinimapIcon 0 Red Circle
+  MinimapIcon 2 Red Circle
   PlayEffect Red
 
 Show # Maps - Simulacrum
 	Class "Map Fragments"
 	BaseType "Simulacrum"
   SetFontSize 45
-  MinimapIcon 0 Red Circle
+  MinimapIcon 2 Red Circle
   PlayEffect Red
 
 Show # Maps - Tablet (Tower Items)
   Class "Tablet"
   SetFontSize 45
-  MinimapIcon 0 White Circle
+  MinimapIcon 1 Red Diamond
   PlayEffect White
 
 ### Trials
 Show # Trials - Ultimatum
   BaseType "Ultimatum"
   SetFontSize 45
-  MinimapIcon 0 White Circle
+  MinimapIcon 2 Orange Circle
   PlayEffect White
 
 Show # Trials - Ultimatum
   BaseType "Djinn"
   SetFontSize 45
-  MinimapIcon 0 White Circle
+  MinimapIcon 2 Orange Circle
   PlayEffect White
 
 # Rooxina - Show all rarities
-Show # Normal - Rooxina - T1
+Show # Normal - Rooxina - High
   BaseType "Solar Amulet" "Expert Feathered Tiara" "Expert Hexer's Robe" "Expert Intricate Gloves" "Expert Feathered Sandals" "Expert Plumed Focus" "Golden Charm"
   SetFontSize 45
-  MinimapIcon 0 Blue Star
-  PlayEffect Blue
+  MinimapIcon 0 Purple Star
+  PlayEffect Purple
 
-Show # Normal - Rooxina - T2
-  BaseType "Expert Chain Tiara" "Expert Keth Raiment" "Expert Jewelled Gloves" "Expert Silk Slippers" "Expert Crystal Focus"
+Show # Normal - Rooxina - Mid
+  BaseType "Expert Chain Tiara" "Expert Keth Raiment" "Expert Altar Robe" "Expert Jewelled Gloves" "Expert Silk Slippers" "Expert Crystal Focus"
   SetFontSize 45
-  MinimapIcon 0 Blue Diamond
-  PlayEffect Blue
+  MinimapIcon 1 Purple Diamond
+  PlayEffect Purple
 
-Show # Normal - Rooxina - T2
+Show # Normal - Rooxina - Low
   BaseType "Expert Wicker Tiara" "Expert Sombre Gloves" "Expert Wrapped Sandals" "Expert Antler Focus"
   SetFontSize 45
-  MinimapIcon 0 Blue Square
+  MinimapIcon 2 Purple Square
 
 ### Rare
 Show # Rare - all
   Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   Rarity Rare
   SetFontSize 35
-  MinimapIcon 0 Yellow Circle
+  MinimapIcon 2 Yellow Circle
   PlayEffect Yellow
 
 ### Misc
 Show # Misc - Quest Items
   Class "Quest"
   SetFontSize 45
-  MinimapIcon 0 Green Circle
+  MinimapIcon 2 Green Circle
 
 ### Jewelery
 Show # Jewelery - Rings
@@ -247,7 +253,7 @@ Show # Jewelery - Belts
 Show # Jewels
   Class "Jewel"
   SetFontSize 45
-  MinimapIcon 0 Blue Circle
+  MinimapIcon 2 Blue Circle
   PlayEffect Blue
 
 ### Normal
@@ -272,7 +278,7 @@ Hide # Normal - 64+
   ItemLevel > 64
   Rarity Normal
   BaseType "Advanced"
-  SetTextColor 70 70 70            # darkgrey (hide)
+  SetTextColor 70 70 70 # darkgrey (hide)
   SetFontSize 30
 
 Show
@@ -299,5 +305,5 @@ Show # Magic - all
 
 ### Catch all unfilterd items
 Show
-  SetTextColor 127 255 212            # aquamarine1
+  SetTextColor 127 255 212 # aquamarine
 	SetFontSize 30
