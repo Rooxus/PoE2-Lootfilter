@@ -70,6 +70,11 @@ Show # Currency - Expedition Logbook
 	MinimapIcon 0 White Star
 	PlayEffect White
 
+Show # Currency - Fate
+  BaseType "Cowardly Fate" "Deadly Fate" "Victorious Fate"
+	SetFontSize 45
+	MinimapIcon 0 White Star
+	PlayEffect White
 
 Show # Currency - Splinters-High
   BaseType "Splinter of Uul-Netol" "Splinter of Chayula" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Crescent Splinter"
@@ -104,17 +109,17 @@ Show # Currency - Catch all
 ### Salvage
 Show # Salvage - Quality - Armour
   Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus"
-  Quality > 1
+  Quality > 9
   SetFontSize 45
 
 Show # Salvage - Quality - Caster
   Class  "Wands" "Staff" "Sceptres"
-  Quality > 1
+  Quality > 9
   SetFontSize 45
 
 Show # Salvage - Quality - Melee/Ranged
   Class "Staves" "Sceptres" "Mace" "Bow" "Crossbow"
-  Quality > 1
+  Quality > 9
   SetFontSize 45
 
 Show # Salvage - Sockets 1
