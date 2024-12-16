@@ -70,6 +70,11 @@ Show # Currency - Expedition Logbook
 	MinimapIcon 0 White Star
 	PlayEffect White
 
+Show # Currency - Fate
+  BaseType "Cowardly Fate" "Deadly Fate" "Victorious Fate"
+	SetFontSize 45
+	MinimapIcon 0 White Star
+	PlayEffect White
 
 Show # Currency - Splinters-High
   BaseType "Splinter of Uul-Netol" "Splinter of Chayula" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Crescent Splinter"
@@ -101,20 +106,93 @@ Show # Currency - Catch all
   Class "Currency"
   SetFontSize 45
 
+# Rooxina - Show all rarities
+Show # Normal - Rooxina - High stuff - ilvl 81+
+  BaseType "Omen Sceptre"
+  ItemLevel >= 81
+  SetFontSize 45
+  MinimapIcon 0 Purple Star
+  PlayEffect Purple
+
+Show # Normal - Rooxina - High stuff
+  BaseType "Solar Amulet" "Golden Charm"
+  ItemLevel >= 64
+  SetFontSize 45
+  MinimapIcon 0 Purple Star
+  PlayEffect Purple
+
+Show # Normal - Rooxina - High stuff - ilvl 76+
+  BaseType "Solar Amulet" "Golden Charm" "Omen Sceptre"
+  ItemLevel >= 76
+  SetFontSize 45
+  MinimapIcon 1 Purple Diamond
+  PlayEffect Purple
+
+# Show # Normal - Rooxina - High
+#   BaseType "Expert Feathered Tiara" "Expert Hexer's Robe" "Expert Intricate Gloves" "Expert Feathered Sandals" "Expert Plumed Focus"
+#   SetFontSize 45
+#   MinimapIcon 0 Purple Star
+#   PlayEffect Purple
+
+# Show # Normal - Rooxina - Mid
+#   BaseType "Expert Chain Tiara" "Expert Keth Raiment" "Expert Altar Robe" "Expert Jewelled Gloves" "Expert Silk Slippers" "Expert Crystal Focus" "Rattling Sceptre"
+#   SetFontSize 45
+#   MinimapIcon 1 Purple Diamond
+#   PlayEffect Purple
+
+# Show # Normal - Rooxina - Low
+#   BaseType "Expert Wicker Tiara" "Expert Sombre Gloves" "Expert Wrapped Sandals" "Expert Antler Focus"
+#   SetFontSize 45
+#   MinimapIcon 2 Purple Square
+
+Show # Normal - Rooxina - High - Armour/ES
+  BaseType  "Expert Shaman Mantle"
+  ItemLevel >= 78
+  SetFontSize 45
+  MinimapIcon 0 Purple Star
+  PlayEffect Purple
+
+Show # Normal - Rooxina - High - Armour/ES
+  BaseType "Expert Heavy Crown" "Expert Goldcast Cuffs" "Expert Pelt Leggings" "Expert Omen Crest Shield" "Expert Jingling Crest Shield"
+  ItemLevel >= 75
+  SetFontSize 45
+  MinimapIcon 0 Purple Star
+  PlayEffect Purple
+
+Show # Normal - Rooxina - Mid
+  BaseType "Expert Horned Crown" "Expert Aged Cuffs" "Expert Secured Leggings"
+  ItemLevel >= 75
+  SetFontSize 45
+  MinimapIcon 1 Purple Diamond
+  PlayEffect Purple
+
+Show # Normal - Rooxina - Mid
+  BaseType "Advanced Omen Crest Shield"
+  ItemLevel >= 75
+  SetFontSize 45
+  MinimapIcon 1 Purple Diamond
+  PlayEffect Purple
+
+Show # Normal - Rooxina - Low
+  BaseType "Expert Padded Leggings"
+  ItemLevel >= 75
+  SetFontSize 45
+  MinimapIcon 2 Purple Square
+
 ### Salvage
 Show # Salvage - Quality - Armour
   Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus"
-  Quality > 1
+  Quality > 9
   SetFontSize 45
 
 Show # Salvage - Quality - Caster
   Class  "Wands" "Staff" "Sceptres"
-  Quality > 1
+  Quality > 9
   SetFontSize 45
 
 Show # Salvage - Quality - Melee/Ranged
   Class "Staves" "Sceptres" "Mace" "Bow" "Crossbow"
-  Quality > 1
+  Quality > 9
   SetFontSize 45
 
 Show # Salvage - Sockets 1
@@ -203,24 +281,6 @@ Show # Trials - Ultimatum
   SetFontSize 45
   MinimapIcon 2 Orange Circle
   PlayEffect White
-
-# Rooxina - Show all rarities
-Show # Normal - Rooxina - High
-  BaseType "Solar Amulet" "Expert Feathered Tiara" "Expert Hexer's Robe" "Expert Intricate Gloves" "Expert Feathered Sandals" "Expert Plumed Focus" "Golden Charm"
-  SetFontSize 45
-  MinimapIcon 0 Purple Star
-  PlayEffect Purple
-
-Show # Normal - Rooxina - Mid
-  BaseType "Expert Chain Tiara" "Expert Keth Raiment" "Expert Altar Robe" "Expert Jewelled Gloves" "Expert Silk Slippers" "Expert Crystal Focus"
-  SetFontSize 45
-  MinimapIcon 1 Purple Diamond
-  PlayEffect Purple
-
-Show # Normal - Rooxina - Low
-  BaseType "Expert Wicker Tiara" "Expert Sombre Gloves" "Expert Wrapped Sandals" "Expert Antler Focus"
-  SetFontSize 45
-  MinimapIcon 2 Purple Square
 
 ### Rare
 Show # Rare - all
