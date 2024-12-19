@@ -7,30 +7,37 @@ Show # Unique
 
 ### Currency
 Show # Currency - Very Valuable
-  BaseType "Mirror of Kalandra" "Divine Orb" "Orb of Annulment" "Gemcutter's Prism" "Perfect Jeweller's Orb" "Greater Jeweller's Orb"
+  BaseType "Mirror of Kalandra" "Divine Orb" "Perfect Jeweller's Orb" "Greater Jeweller's Orb"
   SetFontSize 45
   MinimapIcon 0 White Star
   PlayEffect White
+  PlayAlertSound 5 250
 
 Show # Currency - Valuable
-  BaseType "Chaos Orb" "Exalted Orb" "Orb of Alchemy" "Orb of Chance" "Lesser Jeweller's Orb"
+  BaseType "Orb of Chance" "Orb of Annulment" "Gemcutter's Prism" "Chaos Orb"
   SetFontSize 45
   MinimapIcon 1 White Diamond
   PlayEffect White
 
+Show # Currency - Valuable
+  BaseType "Exalted Orb" "Orb of Alchemy" "Orb of Chance" "Lesser Jeweller's Orb" "Vaal Orb" "Armourer's Scrap"
+  SetFontSize 45
+  MinimapIcon 1 White Triangle
+  PlayEffect White
+
 Show # Currency - Normal
-  BaseType "Vaal Orb" "Regal Orb" "Artificer's Orb" "Arcanist's Etcher" "Glassblower's Bauble" "Chance Shard"
+  BaseType "Regal Orb" "Artificer's Orb" "Arcanist's Etcher" "Glassblower's Bauble" "Chance Shard"
   SetFontSize 45
   MinimapIcon 2 White Square
   PlayEffect White
 
 Show # Currency - Low
-  BaseType "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation"
+  BaseType "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Blacksmith's Whetstone" "Orb of Augmentation"
   SetFontSize 45
   MinimapIcon 2 White Circle
   PlayEffect White
 
-Show # Currency - Very Low
+Hide # Currency - Very Low
   Class "Currency"
   BaseType "Scroll of Wisdom" "Transmutation Shard"
   SetFontSize 30
@@ -114,18 +121,18 @@ Show # Normal - Rooxina - High stuff - ilvl 81+
   MinimapIcon 0 Purple Star
   PlayEffect Purple
 
+Show # Normal - Rooxina - High stuff - ilvl 76+
+  BaseType "Omen Sceptre"
+  ItemLevel >= 76
+  SetFontSize 45
+  MinimapIcon 1 Purple Diamond
+  PlayEffect Purple
+
 Show # Normal - Rooxina - High stuff
   BaseType "Solar Amulet" "Golden Charm"
   ItemLevel >= 64
   SetFontSize 45
   MinimapIcon 0 Purple Star
-  PlayEffect Purple
-
-Show # Normal - Rooxina - High stuff - ilvl 76+
-  BaseType "Solar Amulet" "Golden Charm" "Omen Sceptre"
-  ItemLevel >= 76
-  SetFontSize 45
-  MinimapIcon 1 Purple Diamond
   PlayEffect Purple
 
 # Show # Normal - Rooxina - High
@@ -146,7 +153,7 @@ Show # Normal - Rooxina - High stuff - ilvl 76+
 #   MinimapIcon 2 Purple Square
 
 Show # Normal - Rooxina - High - Armour/ES
-  BaseType  "Expert Shaman Mantle"
+  BaseType  "Expert Shaman Mantle" "Expert Sacrificial Mantle"
   ItemLevel >= 78
   SetFontSize 45
   MinimapIcon 0 Purple Star
@@ -183,30 +190,58 @@ Show # Normal - Rooxina - Low
 Show # Salvage - Quality - Armour
   Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus"
   Quality > 9
-  SetFontSize 45
+  SetFontSize 35
 
 Show # Salvage - Quality - Caster
   Class  "Wands" "Staff" "Sceptres"
   Quality > 9
-  SetFontSize 45
+  SetFontSize 35
 
 Show # Salvage - Quality - Melee/Ranged
   Class "Staves" "Sceptres" "Mace" "Bow" "Crossbow"
   Quality > 9
-  SetFontSize 45
+  SetFontSize 35
 
 Show # Salvage - Sockets 1
   Sockets S
-  SetFontSize 45
+  SetFontSize 35
 
 ### Gems
-Show # Gems - Spirit
+Show # Gems - Spirit - 20
+  BaseType "Uncut Spirit Gem"
+  ItemLevel 20
+  SetFontSize 35
+  MinimapIcon 0 Green Star
+  PlayEffect Green
+
+Show # Gems - Spirit - 19
+  BaseType "Uncut Spirit Gem"
+  ItemLevel 19
+  SetFontSize 35
+  MinimapIcon 1 Green Diamond
+  PlayEffect Green
+
+Show # Gems - Spirit - 19 and lower
   BaseType "Uncut Spirit Gem"
   SetFontSize 35
   MinimapIcon 2 Green Circle
   PlayEffect Green
 
-Show # Gems - Skill
+Show # Gems - Skill - 20
+  BaseType "Uncut Skill Gem"
+  ItemLevel 20
+  SetFontSize 35
+  MinimapIcon 0 Green Star
+  PlayEffect Green
+
+Show # Gems - Skill - 19
+  BaseType "Uncut Skill Gem"
+  ItemLevel 19
+  SetFontSize 35
+  MinimapIcon 1 Green Diamond
+  PlayEffect Green
+
+Show # Gems - Skill - 19 and lower
   BaseType "Uncut Skill Gem"
   SetFontSize 35
   MinimapIcon 2 Green Circle
@@ -335,19 +370,19 @@ Show # Normal - Flasks
 
 Hide # Normal - 64+
   Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
+  BaseType "Advanced"
   ItemLevel > 64
   Rarity Normal
-  BaseType "Advanced"
   SetTextColor 70 70 70 # darkgrey (hide)
   SetFontSize 30
 
-Show
+Hide # Normal - Hide
   Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   Rarity Normal
   SetFontSize 30
 
 ### Magic
-Show # Magic - 64+
+Hide # Magic - 64+
   ItemLevel > 64
   Rarity Magic
   BaseType "Advanced"
@@ -359,9 +394,15 @@ Hide # Magic - Flasks - 64 +
   Class "Life Flasks" "Mana Flasks"
   SetFontSize 30
 
+Hide # Magic - Hide
+  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
+  Rarity Magic
+  ItemLevel > 64
+  SetFontSize 30
+
 Show # Magic - all
   Rarity Magic
-  SetFontSize 35
+  SetFontSize 30
 
 ### Catch all unfilterd items
 Show
