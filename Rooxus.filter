@@ -40,19 +40,31 @@ Show # Currency - Low
 
 Show # Currency - Very Low
   BaseType "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Blacksmith's Whetstone" "Orb of Augmentation" "Lesser Jeweller's Orb"
-  SetFontSize 45
+  SetFontSize 35
 
 Hide # Currency - Very Very Low
-  Class "Currency"
   BaseType "Scroll of Wisdom" "Transmutation Shard"
-  SetFontSize 30
-
-Show # Currency - Gold
   Class "Currency"
+  AreaLevel >= 64
+  SetFontSize 35
+
+Show # Currency - Gold - 100
+  StackSize >= 100
   BaseType "Gold"
-  SetFontSize 30
+  SetFontSize 35
+
+Hide # Currency - Gold
+  BaseType "Gold"
+  Class "Currency"
+  AreaLevel >= 64
+  SetFontSize 15
 
 Show # Currency - Socketable (Runes)
+  BaseType " Rune"
+  Class "Socketable"
+  SetFontSize 35
+
+Show # Currency - Socketable (other)
   Class "Socketable"
   SetFontSize 45
   MinimapIcon 2 White Circle
@@ -72,46 +84,52 @@ Show # Currency - Essences - low
 
 Show # Currency - Breachstones
   Class "Breachstones"
-	SetFontSize 45
-	MinimapIcon 0 White Star
-	PlayEffect White
+  SetFontSize 45
+  MinimapIcon 0 White Star
+  PlayEffect White
 
 Show # Currency - Expedition Logbook
   Class "Expedition Logbook"
-	SetFontSize 45
-	MinimapIcon 0 White Star
-	PlayEffect White
+  SetFontSize 45
+  MinimapIcon 0 White Star
+  PlayEffect White
 
 Show # Currency - Fate
   BaseType "Cowardly Fate" "Deadly Fate" "Victorious Fate"
-	SetFontSize 45
-	MinimapIcon 0 White Star
-	PlayEffect White
+  SetFontSize 45
+  MinimapIcon 0 White Star
+  PlayEffect White
 
 Show # Currency - Splinters-High
-  BaseType "Splinter of Uul-Netol" "Splinter of Chayula" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Crescent Splinter"
-	SetFontSize 45
-	MinimapIcon 2 White Square
+  BaseType "Splinter of Uul-Netol" "Splinter of Chayula" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Crescent Splinter" "Simulacrum Splinter"
+  SetFontSize 45
+  MinimapIcon 2 White Square
   PlayEffect White
 
 Show # Currency - Splinters-Low
-	BaseType "Simulacrum Splinter" "Breach Splinter" "Splinter of Xoph" "Splinter of Tul" "Splinter of Esh" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter"
-	SetFontSize 45
-	MinimapIcon 2 White Circle
+  BaseType "Breach Splinter" "Splinter of Xoph" "Splinter of Tul" "Splinter of Esh" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter"
+  SetFontSize 45
+  MinimapIcon 2 White Circle
   PlayEffect White
 
 Show # Currency - Catalysts
-	Class == "Stackable Currency"
-	BaseType == "Adaptive Catalyst" "Carapace Catalyst" "Chayula's Catalyst" "Esh's Catalyst" "Flesh Catalyst" "Neural Catalyst" "Reaver Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Tul's Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
-	SetFontSize 45
-	MinimapIcon 2 White Square
+  BaseType "Adaptive Catalyst" "Reaver Catalyst" "Chayula's Catalyst" "Tul's Catalyst" "Esh's Catalyst"
+  Class "Stackable Currency"
+  SetFontSize 45
+  MinimapIcon 2 White Square
   PlayEffect White
 
+Show # Currency - Catalysts - trash
+  BaseType "Carapace Catalyst" "Flesh Catalyst" "Neural Catalyst" "Sibilant Catalyst" "Skittering Catalyst"  "Uul-Netol's Catalyst" "Xoph's Catalyst"
+  Class "Stackable Currency"
+  AreaLevel < 64
+  SetFontSize 35
+
 Show # Currency - Distilled
-	Class == "Stackable Currency"
-	BaseType == "Distilled Despair" "Distilled Disgust" "Distilled Envy" "Distilled Fear" "Distilled Greed" "Distilled Guilt" "Distilled Ire" "Distilled Isolation" "Distilled Paranoia" "Distilled Suffering"
-	SetFontSize 45
-	MinimapIcon 2 White Square
+  BaseType "Distilled Despair" "Distilled Disgust" "Distilled Envy" "Distilled Fear" "Distilled Greed" "Distilled Guilt" "Distilled Ire" "Distilled Isolation" "Distilled Paranoia" "Distilled Suffering"
+  Class "Stackable Currency"
+  SetFontSize 45
+  MinimapIcon 2 White Square
   PlayEffect White
 
 Show # Currency - Catch all
@@ -119,37 +137,47 @@ Show # Currency - Catch all
   SetFontSize 45
 
 ### Salvage
-Show # Salvage - Quality - Armour
-  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus"
-  Quality > 9
-  SetFontSize 35
+Show # Salvage - Quality - Armour - area 75-
+  Class "Gloves" "Boots" "Helmets"
+  Quality > 0
+  AreaLevel < 75
+  SetFontSize 45
 
-Show # Salvage - Quality - Caster
+Show # Salvage - Quality - Armour - area 75-
+  Class "Body Armours" "Shields" "Focus"
+  Quality > 9
+  AreaLevel < 75
+  SetFontSize 45
+
+Show # Salvage - Quality - Caster - area 75-
   Class  "Wands" "Staff" "Sceptres"
   Quality > 9
-  SetFontSize 35
+  AreaLevel < 75
+  SetFontSize 45
 
-# Show # Salvage - Quality - Melee/Ranged
-#   Class "Staves" "Sceptres" "Mace" "Bow" "Crossbow"
-#   Quality > 9
-#   SetFontSize 35
+Show # Salvage - Quality - Melee/Ranged - area 75-
+  Class "Staves" "Sceptres" "Mace" "Bow" "Crossbow"
+  Quality > 9
+  AreaLevel < 75
+  SetFontSize 45
 
-# Show # Salvage - Sockets 1
-#   Sockets 2
-#   SetFontSize 35
+Show # Salvage - Sockets - area 75-
+  Sockets > 0
+  AreaLevel < 75
+  SetFontSize 45
 
 ### Gems
 Show # Gems - Spirit - 20
   BaseType "Uncut Spirit Gem"
   ItemLevel 20
-  SetFontSize 35
+  SetFontSize 45
   MinimapIcon 0 Green Star
   PlayEffect Green
 
 Show # Gems - Spirit - 19
   BaseType "Uncut Spirit Gem"
   ItemLevel 19
-  SetFontSize 35
+  SetFontSize 45
   MinimapIcon 1 Green Diamond
   PlayEffect Green
 
@@ -160,8 +188,9 @@ Show # Gems - Spirit - 18
   MinimapIcon 2 Green Circle
   PlayEffect Green
 
-Hide # Gems - Skill - 17-
+Hide # Gems - Spirit - area 79- - 17-
   BaseType "Uncut Spirit Gem"
+  AreaLevel >= 79
   ItemLevel <= 17
   SetFontSize 35
 
@@ -179,64 +208,85 @@ Show # Gems - Skill - 19
   MinimapIcon 1 Green Diamond
   PlayEffect Green
 
-Hide # Gems - Skill - 18-
+Hide # Gems - Skill - area 79- - 18-
   BaseType "Uncut Skill Gem"
+  AreaLevel >= 79
   ItemLevel <= 18
   SetFontSize 35
 
-Hide # Gems - Support
+Hide # Gems - Support - area 79-
   BaseType "Uncut Support Gem"
+  AreaLevel >= 79
   SetFontSize 35
 
+Show # Gems - Spirit
+  BaseType "Uncut Spirit Gem"
+  SetFontSize 35
+  MinimapIcon 2 Green Circle
+  PlayEffect Green
+
+Show # Gems - Skill
+  BaseType "Uncut Skill Gem"
+  SetFontSize 35
+  MinimapIcon 2 Green Circle
+  PlayEffect Green
+
 Show # Gems - Support
+  BaseType "Uncut Support Gem"
+  SetFontSize 35
+  MinimapIcon 2 Green Circle
+  PlayEffect Green
+
+Show # Gems - all
   Class Gem
   SetFontSize 35
   MinimapIcon 2 Green Circle
   PlayEffect Green
 
 ### Maps
-Show # Maps - 13+
-	Class "Waystones"
-	WaystoneTier >= 13
-	SetFontSize 45
+Show # Maps - 15+
+  Class "Waystones"
+  WaystoneTier >= 15
+  SetFontSize 45
   MinimapIcon 0 Red Star
   PlayEffect Red
 
-Show # Maps - 11-13
-	Class "Waystones"
-	WaystoneTier >= 11
-	WaystoneTier <= 13
-	SetFontSize 45
+Show # Maps - 13-14
+  Class "Waystones"
+  WaystoneTier >= 13
+  WaystoneTier <= 14
+  SetFontSize 45
   MinimapIcon 1 Red Diamond
   PlayEffect Red
 
-Hide # Maps - Hide 1-10
-	Class "Waystones"
-  Rarity <= Magic
-	WaystoneTier <= 10
-	SetFontSize 45
-
-Show # Maps - 6-10
-	Class "Waystones"
-	WaystoneTier >= 6
-	WaystoneTier <= 10
-	SetFontSize 45
+Show # Maps - 11-12
+  Class "Waystones"
+  WaystoneTier >= 11
+  WaystoneTier <= 12
+  SetFontSize 45
   MinimapIcon 2 Red Square
   PlayEffect Red
 
-Show # Maps - 1-5
-	Class "Waystones"
-	WaystoneTier >= 1
-	WaystoneTier <= 5
-	SetFontSize 45
+Hide # Maps - Hide 1-10
+  Class "Waystones"
+  Rarity <= Magic
+  AreaLevel >= 79
+  WaystoneTier <= 10
+  SetFontSize 35
+
+Show # Maps - 1-10
+  Class "Waystones"
+  WaystoneTier >= 1
+  WaystoneTier <= 10
+  SetFontSize 45
   MinimapIcon 2 Red Circle
   PlayEffect Red
 
 Show # Maps - Simulacrum
-	Class "Map Fragments"
-	BaseType "Simulacrum"
+  Class "Map Fragments"
+  BaseType "Simulacrum"
   SetFontSize 45
-  MinimapIcon 2 Red Circle
+  MinimapIcon 2 Red Square
   PlayEffect Red
 
 Show # Maps - Tablet (Tower Items)
@@ -258,40 +308,63 @@ Show # Trials - Ultimatum
   MinimapIcon 2 Orange Circle
   PlayEffect White
 
+### Normal->Rare
+Show # Normal->Rare - Highlights
+  BaseType "Omen Sceptre" "Expert Bombard Crossbow"
+  ItemLevel >= 81
+  SetFontSize 45
+  MinimapIcon 0 Purple Star
+  PlayEffect Purple
+
 Show # Normal->Rare - High stuff
-  BaseType "Solar Amulet" "Golden Charm" "Gold Amulet" "Gold Ring"
+  BaseType "Solar Amulet" "Gold Amulet" "Gold Ring"
   ItemLevel >= 64
   SetFontSize 45
   MinimapIcon 1 Purple Diamond
   PlayEffect Purple
 
 Show # Normal->Rare - Rings
-  BaseType "Breach Ring" "Pearl Ring" "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Prismatic Ring" "Amethyst Ring"
+  BaseType "Breach Ring" "Pearl Ring" "Prismatic Ring" "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Amethyst Ring"
   ItemLevel >= 75
   SetFontSize 45
   MinimapIcon 2 Purple Circle
 
 Show # Normal->Rare - Amus
-  BaseType "Stellar Amulet" "Lunar Amulet" "Amber Amulet" "Bloodstone Amulet"
+  BaseType "Bloodstone Amulet" "Lunar Amulet" "Stellar Amulet"  "Amber Amulet" "Lapis Amulet"
   ItemLevel >= 75
   SetFontSize 45
   MinimapIcon 2 Purple Circle
 
 ### Rare
 Show # Rare - Highlights
-  BaseType "Omen Sceptre"
+  BaseType "Omen Sceptre" "Expert Bombard Crossbow"
   Rarity Rare
   ItemLevel >= 76
   SetFontSize 45
   MinimapIcon 0 Purple Star
   PlayEffect Purple
 
+Hide # Rare - Body Armours(Advanced) - 79+
+  BaseType "Advanced"
+  Class  "Body Armours"
+  AreaLevel >= 79
+  Rarity Rare
+  SetFontSize 35
+
 Show # Rare - all
   Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   Rarity Rare
+  Identified false
   SetFontSize 35
   MinimapIcon 2 Yellow Circle
   PlayEffect Yellow
+
+Hide # Rare - all Identified
+  Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
+  Rarity Rare
+  AreaLevel >= 79
+  Identified true
+  SetFontSize 35
 
 ### Misc
 Show # Misc - Quest Items
@@ -300,17 +373,32 @@ Show # Misc - Quest Items
   MinimapIcon 2 Green Circle
 
 ### Jewelery
-Hide # Jewelery - Rings
+Hide # Jewelery - Rings - area 79+
   Class "Rings"
-  SetFontSize 45
+  AreaLevel >= 79
+  SetFontSize 35
 
-Hide # Jewelery - Amulets
+Show # Jewelery - Rings
+  Class "Rings"
+  SetFontSize 35
+
+Hide # Jewelery - Amulets - area 79+
   Class "Amulets"
-  SetFontSize 45
+  AreaLevel >= 79
+  SetFontSize 35
 
-Hide # Jewelery - Belts
+Show # Jewelery - Amulets
+  Class "Amulets"
+  SetFontSize 35
+
+Hide # Jewelery - Belts - area 79+
   Class "Belts"
-  SetFontSize 45
+  AreaLevel >= 79
+  SetFontSize 35
+
+Show # Jewelery - Belts
+  Class "Belts"
+  SetFontSize 35
 
 ### Jewels
 Show # Jewels
@@ -325,66 +413,68 @@ Show # Normal - Charms
   Class "Charm"
   SetFontSize 35
 
-Hide # Normal - Flasks - 64 +
-  ItemLevel > 64
-  Rarity Normal
+Hide # Normal - Flasks - area 64+
   Class "Flask"
-  SetFontSize 30
+  Rarity Normal
+  AreaLevel >= 64
+  SetFontSize 35
 
 Show # Normal - Flasks
   Rarity Normal
   Class "Life Flasks" "Mana Flasks"
-  SetFontSize 30
+  SetFontSize 35
 
-Hide # Normal - 64+
-  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
+Hide # Normal - area 64+
   BaseType "Advanced"
-  ItemLevel > 64
+  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
+  AreaLevel >= 64
   Rarity Normal
-  SetFontSize 30
+  SetFontSize 35
 
-Hide # Normal - Hide
+Hide # Normal - area 75+
   Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   Rarity Normal
-  ItemLevel > 74
-  SetFontSize 30
+  AreaLevel >= 75
+  SetFontSize 35
 
-Show # Normal - Hide
+Show # Normal - Show
   Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   Rarity Normal
-  SetFontSize 30
+  SetFontSize 35
 
 ### Magic
-Hide # Magic - 64+
-  ItemLevel > 64
-  Rarity Magic
+Hide # Magic - area 64+
   BaseType "Advanced"
-  SetFontSize 25
-
-Hide # Magic - Flasks - 64 +
-  ItemLevel > 64
   Rarity Magic
+  AreaLevel >= 64
+  SetFontSize 35
+
+Hide # Magic - Flasks - area 64+
   Class "Life Flasks" "Mana Flasks"
-  SetFontSize 30
+  Rarity Magic
+  AreaLevel >= 64
+  SetFontSize 35
 
-Hide # Magic - 64+
-  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
+Hide # Magic - area 64+
   BaseType "Advanced"
-  ItemLevel > 64
+  Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
+  AreaLevel >= 64
   Rarity Magic
-  SetFontSize 30
+  SetFontSize 35
 
-Hide # Magic - Hide
+Hide # Magic - area 75+
   Class "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   Rarity Magic
-  ItemLevel > 74
-  SetFontSize 30
+  AreaLevel >= 75
+  SetFontSize 35
 
 Show # Magic - all
   Rarity Magic
-  SetFontSize 30
+  SetFontSize 35
 
 ### Catch all unfilterd items
 Show
   SetTextColor 127 255 212 # aquamarine
-	SetFontSize 30
+  SetFontSize 45
+  MinimapIcon 0 Blue Star
+  PlayEffect Blue
