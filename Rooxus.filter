@@ -27,7 +27,7 @@ Show # Currency - Valuable
   PlayEffect White
 
 Show # Currency - Normal
-  BaseType "Exalted Orb" "Orb of Alchemy" "Orb of Chance" "Vaal Orb" "Armourer's Scrap" "Exotic Coinage"  "Omen of "
+  BaseType "Exalted Orb" "Orb of Alchemy" "Orb of Chance" "Vaal Orb" "Armourer's Scrap" "Exotic Coinage" "Omen of "
   SetFontSize 45
   MinimapIcon 2 White Square
   PlayEffect White
@@ -113,14 +113,14 @@ Show # Currency - Splinters-Low
   PlayEffect White
 
 Show # Currency - Catalysts
-  BaseType "Adaptive Catalyst" "Reaver Catalyst" "Chayula's Catalyst" "Tul's Catalyst" "Esh's Catalyst"
+  BaseType "Adaptive Catalyst" "Reaver Catalyst" "Chayula's Catalyst" "Tul's Catalyst" "Neural Catalyst" "Esh's Catalyst"
   Class "Stackable Currency"
   SetFontSize 45
   MinimapIcon 2 White Square
   PlayEffect White
 
 Show # Currency - Catalysts - trash
-  BaseType "Carapace Catalyst" "Flesh Catalyst" "Neural Catalyst" "Sibilant Catalyst" "Skittering Catalyst"  "Uul-Netol's Catalyst" "Xoph's Catalyst"
+  BaseType "Carapace Catalyst" "Flesh Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
   Class "Stackable Currency"
   AreaLevel < 64
   SetFontSize 35
@@ -330,7 +330,7 @@ Show # Normal->Rare - Rings
   MinimapIcon 2 Purple Circle
 
 Show # Normal->Rare - Amus
-  BaseType "Bloodstone Amulet" "Lunar Amulet" "Stellar Amulet"  "Amber Amulet" "Lapis Amulet"
+  BaseType "Bloodstone Amulet" "Lunar Amulet" "Stellar Amulet" "Amber Amulet" "Lapis Amulet"
   ItemLevel >= 75
   SetFontSize 45
   MinimapIcon 2 Purple Circle
