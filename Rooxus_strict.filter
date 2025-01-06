@@ -60,8 +60,14 @@ Hide # Currency - Gold
   SetFontSize 15
 
 Show # Currency - Socketable (Runes)
+  BaseType "Iron Rune"
+  Class "Socketable"
+  SetFontSize 35
+
+Hide # Currency - Socketable (Runes)
   BaseType " Rune"
   Class "Socketable"
+  AreaLevel >= 64
   SetFontSize 35
 
 Show # Currency - Socketable (other)
@@ -251,24 +257,15 @@ Show # Maps - 15+
   MinimapIcon 0 Red Star
   PlayEffect Red
 
-Show # Maps - 14
-  Class "Waystones"
-  WaystoneTier = 14
-  SetFontSize 45
-  MinimapIcon 1 Red Diamond
-  PlayEffect Red
-
-Hide # Maps - Hide 1-13
+Hide # Maps - Hide 1-14
   Class "Waystones"
   Rarity <= Magic
   AreaLevel >= 64
-  WaystoneTier <= 13
+  WaystoneTier <= 14
   SetFontSize 35
 
-Show # Maps - 11-13
+Show # Maps - 11-14
   Class "Waystones"
-  WaystoneTier >= 11
-  WaystoneTier <= 13
   SetFontSize 45
   MinimapIcon 2 Red Square
   PlayEffect Red
@@ -291,21 +288,21 @@ Show # Maps - Simulacrum
 Show # Maps - Tablet (Tower Items)
   Class "Tablet"
   SetFontSize 45
-  MinimapIcon 1 Red Diamond
-  PlayEffect White
+  MinimapIcon 0 Orange Star
+  PlayEffect Orange
 
 ### Trials
 Show # Trials - Ultimatum
   BaseType "Ultimatum"
   SetFontSize 45
   MinimapIcon 2 Orange Circle
-  PlayEffect White
+  PlayEffect Orange
 
 Show # Trials - Ultimatum
   BaseType "Djinn"
   SetFontSize 45
   MinimapIcon 2 Orange Circle
-  PlayEffect White
+  PlayEffect Orange
 
 ### Normal->Rare
 Show # Normal->Rare - Highlights
@@ -323,16 +320,31 @@ Show # Normal->Rare - High stuff
   PlayEffect Purple
 
 Show # Normal->Rare - Rings
-  BaseType "Breach Ring" "Pearl Ring" "Prismatic Ring" "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Amethyst Ring"
+  BaseType "Breach Ring"
   ItemLevel >= 75
   SetFontSize 45
   MinimapIcon 2 Purple Circle
 
-Show # Normal->Rare - Amus
-  BaseType "Bloodstone Amulet" "Lunar Amulet" "Stellar Amulet" "Amber Amulet" "Lapis Amulet"
-  ItemLevel >= 75
-  SetFontSize 45
-  MinimapIcon 2 Purple Circle
+# Show # Normal->Rare - Rings
+#   BaseType "Breach Ring" "Pearl Ring" "Prismatic Ring" "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Amethyst Ring"
+#   ItemLevel >= 75
+#   SetFontSize 45
+#   MinimapIcon 2 Purple Circle
+
+# Show # Normal->Rare - Amus
+#   BaseType "Bloodstone Amulet" "Lunar Amulet" "Stellar Amulet" "Amber Amulet" "Lapis Amulet"
+#   ItemLevel >= 75
+#   SetFontSize 45
+#   MinimapIcon 2 Purple Circle
+
+Hide # Normal->Rare - Charms
+  Class "Charm"
+  AreaLevel >= 64
+  SetFontSize 35
+
+Show # Normal->Rare - Charms
+  Class "Charm"
+  SetFontSize 35
 
 ### Rare
 Show # Rare - Highlights
@@ -345,7 +357,7 @@ Show # Rare - Highlights
 
 Hide # Rare - Body Armours(Advanced) - 79+
   BaseType "Advanced"
-  Class  "Body Armours"
+  Class  "Body Armours" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   AreaLevel >= 64
   Rarity Rare
   SetFontSize 35
@@ -407,11 +419,6 @@ Show # Jewels
   PlayEffect Blue
 
 ### Normal
-Show # Normal - Charms
-  Rarity Normal
-  Class "Charm"
-  SetFontSize 35
-
 Hide # Normal - Flasks - area 64+
   Class "Flask"
   Rarity Normal
@@ -421,6 +428,11 @@ Hide # Normal - Flasks - area 64+
 Show # Normal - Flasks
   Rarity Normal
   Class "Life Flasks" "Mana Flasks"
+  SetFontSize 35
+
+Show # Normal - Chance
+  BaseType "Stellar Amulet" "Sapphire Ring"
+  Rarity Normal
   SetFontSize 35
 
 Hide # Normal - area 64+
