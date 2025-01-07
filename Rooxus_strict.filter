@@ -40,6 +40,7 @@ Show # Currency - Low
 
 Hide # Currency - Very Low
   BaseType "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Blacksmith's Whetstone" "Orb of Augmentation" "Lesser Jeweller's Orb"
+  AreaLevel >= 64
   SetFontSize 35
 
 Hide # Currency - Very Very Low
@@ -140,7 +141,7 @@ Show # Currency - Distilled
 
 Show # Currency - Catch all
   Class "Currency"
-  SetFontSize 45
+  SetFontSize 35
 
 ### Salvage
 Show # Salvage - Quality - Armour - area 75-

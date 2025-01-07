@@ -134,7 +134,7 @@ Show # Currency - Distilled
 
 Show # Currency - Catch all
   Class "Currency"
-  SetFontSize 45
+  SetFontSize 35
 
 ### Salvage
 Show # Salvage - Quality - Armour - area 75-
