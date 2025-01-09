@@ -347,6 +347,12 @@ Show # Normal->Rare - Charms
   Class "Charm"
   SetFontSize 35
 
+### Chance
+Show # Chance
+  BaseType "Stellar Amulet" "Sapphire Ring"
+  Rarity Normal
+  SetFontSize 35
+
 ### Rare
 Show # Rare - Highlights
   BaseType "Omen Sceptre" "Expert Bombard Crossbow"
@@ -429,11 +435,6 @@ Hide # Normal - Flasks - area 64+
 Show # Normal - Flasks
   Rarity Normal
   Class "Life Flasks" "Mana Flasks"
-  SetFontSize 35
-
-Show # Normal - Chance
-  BaseType "Stellar Amulet" "Sapphire Ring"
-  Rarity Normal
   SetFontSize 35
 
 Hide # Normal - area 64+
