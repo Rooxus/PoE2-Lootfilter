@@ -1,8 +1,16 @@
 ﻿### Unique
-Show # Unique
+Show # Unique - others
+	BaseType "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Timeless Jewel" "Time-Lost Diamond" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic" "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Wyrm Quarterstaff"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 0 Pink Star
+  PlayEffect Pink
+  PlayAlertSound 3 150
+
+Show # Unique - others
+  Rarity Unique
+  SetFontSize 45
+  MinimapIcon 2 Pink Circle
   PlayEffect Pink
 
 ### Currency
@@ -144,31 +152,31 @@ Show # Currency - Catch all
   SetFontSize 35
 
 ### Salvage
-Show # Salvage - Quality - Armour - area 75-
+Show # Salvage - Quality - Armour - area 63-
   Class "Gloves" "Boots" "Helmets"
   Quality > 0
   AreaLevel < 64
   SetFontSize 45
 
-Show # Salvage - Quality - Armour - area 75-
+Show # Salvage - Quality - Armour - area 63-
   Class "Body Armours" "Shields" "Focus"
   Quality > 9
   AreaLevel < 64
   SetFontSize 45
 
-Show # Salvage - Quality - Caster - area 75-
+Show # Salvage - Quality - Caster - area 63-
   Class  "Wands" "Staff" "Sceptres"
   Quality > 9
   AreaLevel < 64
   SetFontSize 45
 
-Show # Salvage - Quality - Melee/Ranged - area 75-
+Show # Salvage - Quality - Melee/Ranged - area 63-
   Class "Staves" "Sceptres" "Mace" "Bow" "Crossbow"
   Quality > 9
   AreaLevel < 64
   SetFontSize 45
 
-Show # Salvage - Sockets - area 75-
+Show # Salvage - Sockets - area 63-
   Sockets > 0
   AreaLevel < 64
   SetFontSize 45
@@ -188,18 +196,17 @@ Show # Gems - Spirit - 19
   MinimapIcon 1 Green Diamond
   PlayEffect Green
 
-Show # Gems - Spirit - 18
+Hide # Gems - Spirit - area 64+ - 18-
   BaseType "Uncut Spirit Gem"
-  ItemLevel 18
+  AreaLevel >= 64
+  ItemLevel <= 18
+  SetFontSize 35
+
+Show # Gems - Spirit
+  BaseType "Uncut Spirit Gem"
   SetFontSize 35
   MinimapIcon 2 Green Circle
   PlayEffect Green
-
-Hide # Gems - Spirit - area 79- - 17-
-  BaseType "Uncut Spirit Gem"
-  AreaLevel >= 64
-  ItemLevel <= 17
-  SetFontSize 35
 
 Show # Gems - Skill - 20
   BaseType "Uncut Skill Gem"
@@ -215,28 +222,22 @@ Show # Gems - Skill - 19
   MinimapIcon 1 Green Diamond
   PlayEffect Green
 
-Hide # Gems - Skill - area 79- - 18-
+Hide # Gems - Skill - area 64+ - 18-
   BaseType "Uncut Skill Gem"
   AreaLevel >= 64
   ItemLevel <= 18
   SetFontSize 35
-
-Hide # Gems - Support - area 79-
-  BaseType "Uncut Support Gem"
-  AreaLevel >= 64
-  SetFontSize 35
-
-Show # Gems - Spirit
-  BaseType "Uncut Spirit Gem"
-  SetFontSize 35
-  MinimapIcon 2 Green Circle
-  PlayEffect Green
 
 Show # Gems - Skill
   BaseType "Uncut Skill Gem"
   SetFontSize 35
   MinimapIcon 2 Green Circle
   PlayEffect Green
+
+Hide # Gems - Support - area 64+
+  BaseType "Uncut Support Gem"
+  AreaLevel >= 64
+  SetFontSize 35
 
 Show # Gems - Support
   BaseType "Uncut Support Gem"
@@ -362,7 +363,7 @@ Show # Rare - Highlights
   MinimapIcon 0 Purple Star
   PlayEffect Purple
 
-Hide # Rare - Body Armours(Advanced) - 79+
+Hide # Rare - Body Armours(Advanced) - 65+
   BaseType "Advanced"
   Class  "Body Armours" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   AreaLevel >= 64
@@ -377,11 +378,16 @@ Show # Rare - all
   MinimapIcon 2 Yellow Circle
   PlayEffect Yellow
 
-Hide # Rare - all Identified
+Hide # Rare - all Identified - 64+
   Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
   Rarity Rare
   AreaLevel >= 64
   Identified true
+  SetFontSize 35
+
+Show # Rare - all Identified
+  Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
+  Rarity Rare
   SetFontSize 35
 
 ### Misc
@@ -391,7 +397,7 @@ Show # Misc - Quest Items
   MinimapIcon 2 Green Circle
 
 ### Jewelery
-Hide # Jewelery - Rings - area 79+
+Hide # Jewelery - Rings - area 64+
   Class "Rings"
   AreaLevel >= 64
   SetFontSize 35
@@ -400,7 +406,7 @@ Show # Jewelery - Rings
   Class "Rings"
   SetFontSize 35
 
-Hide # Jewelery - Amulets - area 79+
+Hide # Jewelery - Amulets - area 64+
   Class "Amulets"
   AreaLevel >= 64
   SetFontSize 35
@@ -409,7 +415,7 @@ Show # Jewelery - Amulets
   Class "Amulets"
   SetFontSize 35
 
-Hide # Jewelery - Belts - area 79+
+Hide # Jewelery - Belts - area 64+
   Class "Belts"
   AreaLevel >= 64
   SetFontSize 35
