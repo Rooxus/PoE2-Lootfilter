@@ -1,8 +1,16 @@
 ﻿### Unique
-Show # Unique
+Show # Unique - others
+	BaseType "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Timeless Jewel" "Time-Lost Diamond" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic" "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Wyrm Quarterstaff"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 0 Pink Star
+  PlayEffect Pink
+  PlayAlertSound 3 150
+
+Show # Unique - others
+  Rarity Unique
+  SetFontSize 45
+  MinimapIcon 2 Pink Circle
   PlayEffect Pink
 
 ### Currency
@@ -137,27 +145,27 @@ Show # Currency - Catch all
   SetFontSize 35
 
 ### Salvage
-Show # Salvage - Quality - Armour - area 75-
+Show # Salvage - Quality - Armour - area 74-
   Class "Gloves" "Boots" "Helmets"
   Quality > 0
   AreaLevel < 75
   SetFontSize 45
 
-Show # Salvage - Quality - Armour - area 75-
+Show # Salvage - Quality - Armour - area 74-
   Class "Body Armours" "Shields" "Focus"
-  Quality > 9
+  Quality > 0
   AreaLevel < 75
   SetFontSize 45
 
-Show # Salvage - Quality - Caster - area 75-
+Show # Salvage - Quality - Caster - area 74-
   Class  "Wands" "Staff" "Sceptres"
-  Quality > 9
+  Quality > 0
   AreaLevel < 75
   SetFontSize 45
 
-Show # Salvage - Quality - Melee/Ranged - area 75-
+Show # Salvage - Quality - Melee/Ranged - area 74-
   Class "Staves" "Sceptres" "Mace" "Bow" "Crossbow"
-  Quality > 9
+  Quality > 0
   AreaLevel < 75
   SetFontSize 45
 
@@ -181,18 +189,17 @@ Show # Gems - Spirit - 19
   MinimapIcon 1 Green Diamond
   PlayEffect Green
 
-Show # Gems - Spirit - 18
-  BaseType "Uncut Spirit Gem"
-  ItemLevel 18
-  SetFontSize 35
-  MinimapIcon 2 Green Circle
-  PlayEffect Green
-
 Hide # Gems - Spirit - area 79- - 17-
   BaseType "Uncut Spirit Gem"
   AreaLevel >= 79
   ItemLevel <= 17
   SetFontSize 35
+
+Show # Gems - Spirit
+  BaseType "Uncut Spirit Gem"
+  SetFontSize 35
+  MinimapIcon 2 Green Circle
+  PlayEffect Green
 
 Show # Gems - Skill - 20
   BaseType "Uncut Skill Gem"
@@ -214,22 +221,16 @@ Hide # Gems - Skill - area 79- - 18-
   ItemLevel <= 18
   SetFontSize 35
 
-Hide # Gems - Support - area 79-
-  BaseType "Uncut Support Gem"
-  AreaLevel >= 79
-  SetFontSize 35
-
-Show # Gems - Spirit
-  BaseType "Uncut Spirit Gem"
-  SetFontSize 35
-  MinimapIcon 2 Green Circle
-  PlayEffect Green
-
 Show # Gems - Skill
   BaseType "Uncut Skill Gem"
   SetFontSize 35
   MinimapIcon 2 Green Circle
   PlayEffect Green
+
+Hide # Gems - Support - area 79-
+  BaseType "Uncut Support Gem"
+  AreaLevel >= 79
+  SetFontSize 35
 
 Show # Gems - Support
   BaseType "Uncut Support Gem"
