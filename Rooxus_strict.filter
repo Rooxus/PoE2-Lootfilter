@@ -307,12 +307,12 @@ Show # Trials - Ultimatum
   PlayEffect Orange
 
 ### Normal->Rare
-Show # Normal->Rare - Highlights
-  BaseType "Omen Sceptre" "Expert Bombard Crossbow"
-  ItemLevel >= 81
-  SetFontSize 45
-  MinimapIcon 0 Purple Star
-  PlayEffect Purple
+# Show # Normal->Rare - Highlights
+#   BaseType "Omen Sceptre"
+#   ItemLevel >= 81
+#   SetFontSize 45
+#   MinimapIcon 0 Purple Star
+#   PlayEffect Purple
 
 Show # Normal->Rare - High stuff
   BaseType "Solar Amulet" "Gold Amulet" "Gold Ring"
@@ -356,22 +356,28 @@ Show # Chance
 
 ### Rare
 Show # Rare - Highlights
-  BaseType "Omen Sceptre" "Expert Bombard Crossbow"
-  Rarity Rare
+  BaseType "Omen Sceptre"
   ItemLevel >= 76
+  Rarity Rare
   SetFontSize 45
   MinimapIcon 0 Purple Star
   PlayEffect Purple
 
 Hide # Rare - Body Armours(Advanced) - 65+
   BaseType "Advanced"
-  Class  "Body Armours" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
+  Class  "Gloves" "Body Armours" "Boots" "Helmets" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
+  AreaLevel >= 64
+  Rarity Rare
+  SetFontSize 35
+
+Hide # Rare - Body Armours(Advanced) - 65+
+  Class  "Staves" "Staff" "Mace" "Bow" "Crossbow" "Quiver" "Shields"
   AreaLevel >= 64
   Rarity Rare
   SetFontSize 35
 
 Show # Rare - all
-  Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
+  Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Sceptres" "Quiver"
   Rarity Rare
   Identified false
   SetFontSize 35
