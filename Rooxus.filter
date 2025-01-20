@@ -9,6 +9,11 @@ Show # Unique - others
 
 Show # Unique - others
   Rarity Unique
+  Identified true
+  SetFontSize 45
+
+Show # Unique - others
+  Rarity Unique
   SetFontSize 45
   MinimapIcon 2 Pink Circle
   PlayEffect Pink

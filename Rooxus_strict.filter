@@ -9,6 +9,11 @@ Show # Unique - others
 
 Show # Unique - others
   Rarity Unique
+  Identified true
+  SetFontSize 45
+
+Show # Unique - others
+  Rarity Unique
   SetFontSize 45
   MinimapIcon 2 Pink Circle
   PlayEffect Pink
@@ -17,6 +22,8 @@ Show # Unique - others
 Show # Currency - Very Very Valuable
   BaseType "Mirror of Kalandra" "Divine Orb" "Perfect Jeweller's Orb" "Soul Core of Azcapa" "Distilled Isolation" "Distilled Suffering" "Greater Essence of Haste" "Omen of Dextral Annulment" "Omen of Dextral Erasure" "Omen of Sinistral Erasure" "Omen of Sinistral Annulment" "Omen of Whittling"
   SetFontSize 45
+	SetTextColor 255 000 000 255
+	SetTextColor 255 000 000 255
   MinimapIcon 0 White Star
   PlayEffect White
   PlayAlertSound 5 250
@@ -24,6 +31,8 @@ Show # Currency - Very Very Valuable
 Show # Currency - Very Valuable
   BaseType "Greater Jeweller's Orb" "Soul Core of Zalatl" "Distilled Fear" "Distilled Despair" "Greater Essence of Sorcery" "Greater Essence of Torment" "Greater Essence of Electricity" "Greater Essence of the Infinite" "Greater Essence of the Mind" "Greater Essence of Enhancement" "Omen of Amelioration" "Omen of Corruption"
   SetFontSize 45
+	SetTextColor 255 000 000 255
+	SetTextColor 255 000 000 255
   MinimapIcon 1 White Diamond
   PlayEffect White
   PlayAlertSound 3 150
@@ -41,13 +50,13 @@ Show # Currency - Normal
   PlayEffect White
 
 Show # Currency - Low
-  BaseType "Regal Orb" "Artificer's Orb" "Arcanist's Etcher" "Glassblower's Bauble" "Chance Shard"
+  BaseType "Artificer's Orb" "Arcanist's Etcher" "Glassblower's Bauble" "Chance Shard"
   SetFontSize 45
   MinimapIcon 2 White Circle
   PlayEffect White
 
 Hide # Currency - Very Low
-  BaseType "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Blacksmith's Whetstone" "Orb of Augmentation" "Lesser Jeweller's Orb"
+  BaseType "Regal Orb" "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Blacksmith's Whetstone" "Orb of Augmentation" "Lesser Jeweller's Orb"
   AreaLevel >= 64
   SetFontSize 35
 
@@ -68,10 +77,10 @@ Hide # Currency - Gold
   AreaLevel >= 64
   SetFontSize 15
 
-Show # Currency - Socketable (Runes)
-  BaseType "Iron Rune"
-  Class "Socketable"
-  SetFontSize 35
+# Show # Currency - Socketable (Runes)
+#   BaseType "Iron Rune"
+#   Class "Socketable"
+#   SetFontSize 35
 
 Hide # Currency - Socketable (Runes)
   BaseType " Rune"
@@ -188,6 +197,7 @@ Show # Gems - Spirit - 20
   SetFontSize 45
   MinimapIcon 0 Green Star
   PlayEffect Green
+  PlayAlertSound 5 250
 
 Show # Gems - Spirit - 19
   BaseType "Uncut Spirit Gem"
@@ -214,6 +224,7 @@ Show # Gems - Skill - 20
   SetFontSize 35
   MinimapIcon 0 Green Star
   PlayEffect Green
+  PlayAlertSound 5 250
 
 Show # Gems - Skill - 19
   BaseType "Uncut Skill Gem"
@@ -259,9 +270,15 @@ Show # Maps - 15+
   MinimapIcon 0 Red Star
   PlayEffect Red
 
-Hide # Maps - Hide 1-14
+Show # Maps - 10+ rare
   Class "Waystones"
-  Rarity <= Magic
+  Rarity Rare
+  WaystoneTier >= 10
+  SetFontSize 35
+
+Hide # Maps - Hide 1-14 - all
+  Class "Waystones"
+  Rarity <= Rare
   AreaLevel >= 64
   WaystoneTier <= 14
   SetFontSize 35
@@ -294,17 +311,13 @@ Show # Maps - Tablet (Tower Items)
   PlayEffect Orange
 
 ### Trials
-Show # Trials - Ultimatum
+Hide # Trials - Ultimatum
   BaseType "Ultimatum"
-  SetFontSize 45
-  MinimapIcon 2 Orange Circle
-  PlayEffect Orange
+  SetFontSize 35
 
-Show # Trials - Ultimatum
+Hide # Trials - Ultimatum
   BaseType "Djinn"
-  SetFontSize 45
-  MinimapIcon 2 Orange Circle
-  PlayEffect Orange
+  SetFontSize 35
 
 ### Normal->Rare
 # Show # Normal->Rare - Highlights
@@ -352,17 +365,10 @@ Show # Normal->Rare - Charms
 Show # Chance
   BaseType "Stellar Amulet" "Sapphire Ring"
   Rarity Normal
-  SetFontSize 35
+  MinimapIcon 2 Purple Circle
+  SetFontSize 45
 
 ### Rare
-Show # Rare - Highlights
-  BaseType "Omen Sceptre"
-  ItemLevel >= 76
-  Rarity Rare
-  SetFontSize 45
-  MinimapIcon 0 Purple Star
-  PlayEffect Purple
-
 Hide # Rare - Body Armours(Advanced) - 65+
   BaseType "Advanced"
   Class  "Gloves" "Body Armours" "Boots" "Helmets" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
@@ -371,13 +377,13 @@ Hide # Rare - Body Armours(Advanced) - 65+
   SetFontSize 35
 
 Hide # Rare - Body Armours(Advanced) - 65+
-  Class  "Staves" "Staff" "Mace" "Bow" "Crossbow" "Quiver" "Shields"
+  Class  "Staves" "Staff" "Mace" "Bow" "Crossbow" "Shields"
   AreaLevel >= 64
   Rarity Rare
   SetFontSize 35
 
 Show # Rare - all
-  Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Sceptres" "Quiver"
+  Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Focus" "Wands" "Sceptres" "Quiver"
   Rarity Rare
   Identified false
   SetFontSize 35
