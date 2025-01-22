@@ -44,7 +44,7 @@ Show # Currency - Valuable
   PlayEffect White
 
 Show # Currency - Normal
-  BaseType "Exalted Orb" "Orb of Alchemy" "Orb of Chance" "Vaal Orb" "Armourer's Scrap" "Exotic Coinage" "Omen of "
+  BaseType "Exalted Orb" "Orb of Alchemy" "Orb of Chance" "Vaal Orb" "Armourer's Scrap" "Blacksmith's Whetstone" "Exotic Coinage" "Omen of "
   SetFontSize 45
   MinimapIcon 2 White Square
   PlayEffect White
@@ -56,7 +56,7 @@ Show # Currency - Low
   PlayEffect White
 
 Hide # Currency - Very Low
-  BaseType "Regal Orb" "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Blacksmith's Whetstone" "Orb of Augmentation" "Lesser Jeweller's Orb"
+  BaseType "Regal Orb" "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb"
   AreaLevel >= 64
   SetFontSize 35
 
