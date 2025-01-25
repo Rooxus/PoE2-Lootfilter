@@ -1,22 +1,22 @@
 ﻿### Unique
-Show # Unique - others
-	BaseType "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Timeless Jewel" "Time-Lost Diamond" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic" "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Wyrm Quarterstaff"
+Show # Unique - T1
+	BaseType "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Timeless Jewel" "Time-Lost Diamond" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic" "Long Quarterstaff" "Wrapped Greathelm" "Amethyst Ring" "Heavy Belt" "Sapphire Ring" "Stellar Amulet"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 0 Pink Star
   PlayEffect Pink
   PlayAlertSound 3 150
 
-Show # Unique - others
-  Rarity Unique
-  Identified true
-  SetFontSize 45
-
-Show # Unique - others
+Show # Unique - T2
+	BaseType "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Trimmed Greaves" "Wyrm Quarterstaff"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 2 Pink Circle
   PlayEffect Pink
+
+Show # Unique - others
+  Rarity Unique
+  SetFontSize 35
 
 ### Currency
 Show # Currency - Very Very Valuable
@@ -263,10 +263,10 @@ Show # Maps - 15+
   MinimapIcon 0 Red Star
   PlayEffect Red
 
-Show # Maps - 10+ rare
+Show # Maps - 14+ rare
   Class "Waystones"
   Rarity Rare
-  WaystoneTier >= 10
+  WaystoneTier >= 14
   SetFontSize 35
 
 Hide # Maps - Hide 1-14 - all
@@ -320,12 +320,12 @@ Hide # Trials - Ultimatum
 #   MinimapIcon 0 Purple Star
 #   PlayEffect Purple
 
-Show # Normal->Rare - High stuff
-  BaseType "Solar Amulet" "Gold Amulet" "Gold Ring"
-  ItemLevel >= 64
-  SetFontSize 45
-  MinimapIcon 1 Purple Diamond
-  PlayEffect Purple
+# Show # Normal->Rare - High stuff
+#   BaseType "Solar Amulet" "Gold Amulet" "Gold Ring"
+#   ItemLevel >= 64
+#   SetFontSize 45
+#   MinimapIcon 1 Purple Diamond
+#   PlayEffect Purple
 
 Show # Normal->Rare - Rings
   BaseType "Breach Ring"
@@ -379,6 +379,7 @@ Show # Rare - ES
 	BaseEnergyShield > 0
 	BaseEvasion 0
 	BaseArmour 0
+  BaseType "Expert"
 	Rarity Rare
 	Class "Body Armours" "Boots" "Gloves" "Helmets"
   Identified false
@@ -387,8 +388,22 @@ Show # Rare - ES
   MinimapIcon 2 Yellow Circle
   PlayEffect Yellow
 
+Hide # Rare - show
+  BaseType "Withered Wand"
+  Rarity Rare
+  Identified false
+  SetFontSize 35
+
 Show # Rare - show
-  Class "Jewel" "Rings" "Amulets" "Belts" "Focus" "Wands" "Sceptres" "Quiver"
+  Class "Jewel" "Rings" "Amulets" "Focus" "Wands" "Sceptres"
+  Rarity Rare
+  Identified false
+  SetFontSize 35
+  MinimapIcon 2 Yellow Circle
+  PlayEffect Yellow
+
+Show # Rare - show
+  BaseType "Primed Quiver" "Visceral Quiver"
   Rarity Rare
   Identified false
   SetFontSize 35
@@ -397,10 +412,15 @@ Show # Rare - show
 
 Hide # Rare - Hide other gear
 	Rarity Rare
-	Class "Body Armours" "Boots" "Gloves" "Helmets"
+	Class "Quiver"
   AreaLevel >= 64
   SetFontSize 35
 
+Hide # Rare - Hide other gear
+	Rarity Rare
+	Class "Body Armours" "Boots" "Gloves" "Helmets"  "Belts"
+  AreaLevel >= 64
+  SetFontSize 35
 
 Hide # Rare - all Identified - 64+
   Class "Jewel" "Rings" "Amulets" "Belts" "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Focus" "Wands" "Staves" "Sceptres" "Staff" "Mace" "Bow" "Crossbow" "Quiver"
