@@ -1,6 +1,6 @@
 ﻿### Unique
 Show # Unique - T1
-	BaseType "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Timeless Jewel" "Time-Lost Diamond" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic" "Long Quarterstaff" "Wrapped Greathelm" "Amethyst Ring" "Heavy Belt" "Sapphire Ring" "Stellar Amulet"
+	BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Timeless Jewel" "Time-Lost Diamond" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic" "Long Quarterstaff" "Wrapped Greathelm" "Amethyst Ring" "Heavy Belt" "Sapphire Ring" "Stellar Amulet"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 0 Pink Star
@@ -8,7 +8,7 @@ Show # Unique - T1
   PlayAlertSound 3 150
 
 Show # Unique - T2
-	BaseType "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Trimmed Greaves" "Wyrm Quarterstaff"
+	BaseType == "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Trimmed Greaves" "Wyrm Quarterstaff"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 2 Pink Circle
