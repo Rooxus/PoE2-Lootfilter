@@ -8,7 +8,7 @@ Show # Unique - T1
   PlayAlertSound 3 150
 
 Show # Unique - T2
-	BaseType == "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Trimmed Greaves" "Wyrm Quarterstaff"
+	BaseType == "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Trimmed Greaves" "Wyrm Quarterstaff" "Spiked Club" "Crude Bow"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 2 Pink Circle
@@ -358,7 +358,7 @@ Show # Normal->Rare - Charms
 Show # Chance
   BaseType "Stellar Amulet" "Sapphire Ring"
   Rarity Normal
-  MinimapIcon 2 Purple Circle
+  MinimapIcon 2 Purple Star
   SetFontSize 45
 
 ### Rare
@@ -389,7 +389,7 @@ Show # Rare - ES
   PlayEffect Yellow
 
 Hide # Rare - show
-  BaseType "Withered Wand"
+  BaseType "Withered Wand" "Bone Wand"
   Rarity Rare
   Identified false
   SetFontSize 35
