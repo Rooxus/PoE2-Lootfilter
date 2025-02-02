@@ -115,7 +115,7 @@ Show # Currency - Breachstones
 Show # Currency - Expedition Logbook
   Class "Expedition Logbook"
   SetFontSize 45
-  MinimapIcon 0 White Star
+  MinimapIcon 0 Orange Star
   PlayEffect White
 
 Show # Currency - Fate
@@ -356,9 +356,9 @@ Show # Normal->Rare - Charms
 
 ### Chance
 Show # Chance
-  BaseType "Stellar Amulet" "Sapphire Ring"
+  BaseType "Stellar Amulet" "Sapphire Ring" "Heavy Belt" "Armoured Cap"
   Rarity Normal
-  MinimapIcon 2 Purple Star
+  MinimapIcon 0 Purple Star
   SetFontSize 45
 
 ### Rare
