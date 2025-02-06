@@ -8,7 +8,7 @@ Show # Unique - T1
   PlayAlertSound 3 150
 
 Show # Unique - T2
-	BaseType == "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Trimmed Greaves" "Wyrm Quarterstaff" "Spiked Club" "Crude Bow"
+	BaseType == "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Trimmed Greaves" "Wyrm Quarterstaff" "Spiked Club" "Crude Bow" "Gold Ring" "Woven Focus"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 2 Pink Circle
@@ -117,6 +117,10 @@ Show # Currency - Expedition Logbook
   SetFontSize 45
   MinimapIcon 0 Orange Star
   PlayEffect White
+
+Hide # Currency - Expedition crap
+  BaseType "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact"
+  SetFontSize 35
 
 Show # Currency - Fate
   BaseType "Cowardly Fate" "Deadly Fate" "Victorious Fate"
