@@ -1,5 +1,4 @@
 *
-!Rooxus.filter
-!Rooxus_strict.filter
+!Rooxus_[0-9]_*
 !.gitignore
 !README.md
