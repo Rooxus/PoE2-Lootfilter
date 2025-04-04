@@ -57,13 +57,11 @@ Show # Currency - Low
 
 Show # Currency - Very Low
   BaseType "Regal Orb" "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb"
-  AreaLevel >= 65
   SetFontSize 35
 
 Show # Currency - Very Very Low
   BaseType "Scroll of Wisdom" "Transmutation Shard"
   Class "Currency"
-  AreaLevel >= 65
   SetFontSize 35
 
 Show # Currency - Gold - 100
