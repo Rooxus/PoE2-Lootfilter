@@ -75,6 +75,11 @@ Hide # Currency - Gold
   AreaLevel >= 65
   SetFontSize 15
 
+Show # Currency - Gold
+  BaseType "Gold"
+  Class "Currency"
+  SetFontSize 35
+
 Show # Currency - Socketable - Runes greater
   BaseType "Greater "
   Class "Socketable"
