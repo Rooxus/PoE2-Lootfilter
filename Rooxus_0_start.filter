@@ -1,6 +1,6 @@
 ﻿### Unique
 Show # Unique - T1
-  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Timeless Jewel" "Time-Lost Diamond" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic" "Long Quarterstaff" "Wrapped Greathelm" "Amethyst Ring" "Heavy Belt" "Sapphire Ring" "Stellar Amulet"
+  BaseType == "Armoured Cap" "Emerald" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Timeless Jewel" "Time-Lost Diamond" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 0 Pink Star
@@ -8,7 +8,7 @@ Show # Unique - T1
   PlayAlertSound 3 150
 
 Show # Unique - T2
-  BaseType == "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Trimmed Greaves" "Wyrm Quarterstaff" "Spiked Club" "Crude Bow" "Gold Ring" "Woven Focus"
+  BaseType == "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Lattice Sandals" "Spiral Wraps" "Trimmed Greaves" "Wyrm Quarterstaff" "Amethyst Ring" "Heavy Belt" "Sapphire Ring" "Stellar Amulet" "Amber Amulet" "Azure Amulet" "Crimson Amulet" "Crude Bow" "Emerald Ring" "Gold Ring" "Jade Amulet" "Lazuli Ring" "Moulded Mitts" "Pearl Ring" "Solar Amulet" "Tribal Mask" "Amphora Relic" "Bloodstone Amulet" "Braced Sabatons" "Brimmed Helm" "Champion Cuirass" "Chiming Staff" "Closed Helm" "Coffer Relic" "Covert Hood" "Cowled Helm" "Crescent Quarterstaff" "Dualstring Bow" "Feathered Sandals" "Gold Circlet" "Grand Cuisses" "Grand Manchettes" "Hunting Shoes" "Iron Greaves" "Iron Ring" "Knight Armour" "Lace Hood" "Lapis Amulet" "Linen Wraps" "Long Quarterstaff" "Lunar Amulet" "Pilgrim Vestments" "Rampart Tower Shield" "Rawhide Belt" "Ruby Ring" "Scale Mail" "Seal Relic" "Secured Leggings" "Shortbow" "Solid Mask" "Spiked Club" "Spined Bracers" "Spired Greathelm" "Stone Greaves" "Suede Bracers" "Tapestry Relic" "Tattered Robe" "Threaded Shoes" "Topaz Ring" "Torment Club" "Vaal Cuirass" "Velour Shoes" "Volatile Wand" "Wrapped Greathelm"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 2 Pink Circle
@@ -191,28 +191,24 @@ Show # Currency - Catch all
   PlayEffect Blue
 
 ### Salvage
-Show # Salvage - Quality - Armour - area 64-
-  Class == "Gloves" "Boots" "Helmets"
+Show # Salvage - Quality - Armour
+  Class == "Gloves" "Body Armours" "Boots" "Helmets"
   Quality > 0
-  AreaLevel <= 65
   SetFontSize 45
 
-Show # Salvage - Quality - Armour - area 64-
-  Class "Body Armours" "Shields" "Focus" "Bucklers"
-  Quality > 9
-  AreaLevel <= 65
+Show # Salvage - Quality - Offhands
+  Class "Shields" "Foci" "Bucklers"
+  Quality > 0
   SetFontSize 45
 
-Show # Salvage - Quality - Caster - area 64-
-  Class  "Wands" "Staff" "Sceptres" "Spears"
-  Quality > 9
-  AreaLevel <= 65
+Show # Salvage - Quality - Caster
+  Class  "Wands" "Staff" "Sceptres"
+  Quality > 0
   SetFontSize 45
 
-Show # Salvage - Quality - Melee/Ranged - area 64-
-  Class "Staves" "Sceptres" "Mace" "Bow" "Crossbow"
-  Quality > 9
-  AreaLevel <= 65
+Show # Salvage - Quality - Melee/Ranged
+  Class "Spears" "Staves" "Quarterstaves" "Bows" "Crossbows" "One Hand Maces" "Two Hand Maces"
+  Quality > 0
   SetFontSize 45
 
 Show # Salvage - Sockets - area 64-
@@ -235,12 +231,6 @@ Show # Gems - Spirit - 19
   SetFontSize 45
   MinimapIcon 1 Green Diamond
   PlayEffect Green
-
-Hide # Gems - Spirit - area 79- - 17-
-  BaseType "Uncut Spirit Gem"
-  AreaLevel >= 79
-  ItemLevel <= 17
-  SetFontSize 35
 
 Show # Gems - Spirit - 18-
   BaseType "Uncut Spirit Gem"
@@ -268,22 +258,11 @@ Show # Gems - Skill - 19
   MinimapIcon 1 Green Diamond
   PlayEffect Green
 
-Hide # Gems - Skill - area 79- - 18-
-  BaseType "Uncut Skill Gem"
-  AreaLevel >= 79
-  ItemLevel <= 18
-  SetFontSize 35
-
 Show # Gems - Skill
   BaseType "Uncut Skill Gem"
   SetFontSize 35
   MinimapIcon 2 Green Circle
   PlayEffect Green
-
-Hide # Gems - Support - area 79-
-  BaseType "Uncut Support Gem"
-  AreaLevel >= 79
-  SetFontSize 35
 
 Show # Gems - Support
   BaseType "Uncut Support Gem"
@@ -473,23 +452,10 @@ Show # Rare - T2
   MinimapIcon 2 Yellow Square
   PlayEffect Yellow
 
-Hide # Rare - all Identified - 75+
-  Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
-  Rarity Rare
-  AreaLevel >= 75
-  Identified true
-  SetFontSize 35
-
 Show # Rare - all Identified
   Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
   Rarity Rare
-  SetFontSize 35
-
-Show # Rare - all Unid - 75+
-  Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
-  Rarity Rare
-  AreaLevel >= 75
-  Identified false
+  Identified true
   SetFontSize 35
 
 Show # Rare - all Unid
@@ -507,28 +473,14 @@ Show # Misc - Quest Items
   MinimapIcon 2 Green Circle
 
 ### Jewelery
-# Hide # Jewelery - Rings - area 75+
-#   Class "Rings"
-#   AreaLevel >= 75
-#   SetFontSize 35
 
 Show # Jewelery - Rings
   Class "Rings"
   SetFontSize 35
 
-# Hide # Jewelery - Amulets - area 75+
-#   Class "Amulets"
-#   AreaLevel >= 75
-#   SetFontSize 35
-
 Show # Jewelery - Amulets
   Class "Amulets"
   SetFontSize 35
-
-# Hide # Jewelery - Belts - area 75+
-#   Class "Belts"
-#   AreaLevel >= 75
-#   SetFontSize 35
 
 Show # Jewelery - Belts
   Class "Belts"
