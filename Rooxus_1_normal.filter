@@ -1,6 +1,6 @@
 ﻿### Unique
 Show # Unique - T1
-	BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Timeless Jewel" "Time-Lost Diamond" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic" "Long Quarterstaff" "Wrapped Greathelm" "Amethyst Ring" "Heavy Belt" "Sapphire Ring" "Stellar Amulet"
+  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Timeless Jewel" "Time-Lost Diamond" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic" "Long Quarterstaff" "Wrapped Greathelm" "Amethyst Ring" "Heavy Belt" "Sapphire Ring" "Stellar Amulet"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 0 Pink Star
@@ -8,7 +8,7 @@ Show # Unique - T1
   PlayAlertSound 3 150
 
 Show # Unique - T2
-	BaseType == "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Trimmed Greaves" "Wyrm Quarterstaff" "Spiked Club" "Crude Bow" "Gold Ring" "Woven Focus"
+  BaseType == "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Trimmed Greaves" "Wyrm Quarterstaff" "Spiked Club" "Crude Bow" "Gold Ring" "Woven Focus"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 2 Pink Circle
@@ -22,8 +22,8 @@ Show # Unique - others
 Show # Currency - Very Very Valuable
   BaseType "Mirror of Kalandra" "Divine Orb" "Perfect Jeweller's Orb" "Soul Core of Azcapa" "Distilled Isolation" "Distilled Suffering" "Greater Essence of Haste" "Omen of Dextral Annulment" "Omen of Dextral Erasure" "Omen of Sinistral Erasure" "Omen of Sinistral Annulment" "Omen of Whittling"
   SetFontSize 45
-	SetTextColor 255 000 000 255
-	SetTextColor 255 000 000 255
+  SetTextColor 255 000 000 255
+  SetTextColor 255 000 000 255
   MinimapIcon 0 White Star
   PlayEffect White
   PlayAlertSound 5 250
@@ -31,8 +31,8 @@ Show # Currency - Very Very Valuable
 Show # Currency - Very Valuable
   BaseType "Greater Jeweller's Orb" "Soul Core of Zalatl" "Distilled Fear" "Distilled Despair" "Greater Essence of Sorcery" "Greater Essence of Torment" "Greater Essence of Electricity" "Greater Essence of the Infinite" "Greater Essence of the Mind" "Greater Essence of Enhancement" "Omen of Amelioration" "Omen of Corruption"
   SetFontSize 45
-	SetTextColor 255 000 000 255
-	SetTextColor 255 000 000 255
+  SetTextColor 255 000 000 255
+  SetTextColor 255 000 000 255
   MinimapIcon 1 White Diamond
   PlayEffect White
   PlayAlertSound 3 150
@@ -55,12 +55,12 @@ Show # Currency - Low
   MinimapIcon 2 White Circle
   PlayEffect White
 
-Hide # Currency - Very Low
-  BaseType "Regal Orb" "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb"
+Show # Currency - Very Low
+  BaseType "Regal Orb" "Lesser Jeweller's Orb"
   SetFontSize 35
 
 Hide # Currency - Very Very Low
-  BaseType "Scroll of Wisdom" "Transmutation Shard"
+  BaseType "Scroll of Wisdom" "Transmutation Shard" "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Orb of Augmentation"
   Class "Currency"
   SetFontSize 35
 
@@ -72,7 +72,13 @@ Show # Currency - Gold - 100
 Hide # Currency - Gold
   BaseType "Gold"
   Class "Currency"
+  AreaLevel >= 65
   SetFontSize 15
+
+Show # Currency - Gold
+  BaseType "Gold"
+  Class "Currency"
+  SetFontSize 35
 
 Show # Currency - Socketable - Runes greater
   BaseType "Greater "
@@ -86,7 +92,7 @@ Show # Currency - Socketable - Runes normal
   Class "Socketable"
   SetFontSize 35
 
-Hide # Currency - Socketable - Runes lesser
+Show # Currency - Socketable - Runes lesser
   BaseType "Lesser "
   Class "Socketable"
   SetFontSize 35
@@ -136,7 +142,7 @@ Show # Currency - Expedition Logbook
   MinimapIcon 0 Orange Square
   PlayEffect Orange
 
-Hide # Currency - Expedition crap
+Show # Currency - Expedition crap
   BaseType "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact"
   SetFontSize 35
 
@@ -165,7 +171,7 @@ Show # Currency - Catalysts
   MinimapIcon 2 White Square
   PlayEffect White
 
-Hide # Currency - Catalysts - trash
+Show # Currency - Catalysts - trash
   BaseType "Carapace Catalyst" "Flesh Catalyst" "Sibilant Catalyst" "Skittering Catalyst" "Uul-Netol's Catalyst" "Xoph's Catalyst"
   Class "Stackable Currency"
   SetFontSize 35
@@ -230,9 +236,14 @@ Show # Gems - Spirit - 19
   MinimapIcon 1 Green Diamond
   PlayEffect Green
 
-Hide # Gems - Spirit - area 65+ - 18-
+Hide # Gems - Spirit - area 79- - 17-
   BaseType "Uncut Spirit Gem"
-  AreaLevel >= 65
+  AreaLevel >= 79
+  ItemLevel <= 17
+  SetFontSize 35
+
+Show # Gems - Spirit - 18-
+  BaseType "Uncut Spirit Gem"
   ItemLevel <= 18
   SetFontSize 35
 
@@ -257,9 +268,9 @@ Show # Gems - Skill - 19
   MinimapIcon 1 Green Diamond
   PlayEffect Green
 
-Hide # Gems - Skill - area 65+ - 18-
+Hide # Gems - Skill - area 79- - 18-
   BaseType "Uncut Skill Gem"
-  AreaLevel >= 65
+  AreaLevel >= 79
   ItemLevel <= 18
   SetFontSize 35
 
@@ -269,9 +280,9 @@ Show # Gems - Skill
   MinimapIcon 2 Green Circle
   PlayEffect Green
 
-Hide # Gems - Support - area 65+
+Hide # Gems - Support - area 79-
   BaseType "Uncut Support Gem"
-  AreaLevel >= 65
+  AreaLevel >= 79
   SetFontSize 35
 
 Show # Gems - Support
@@ -294,21 +305,18 @@ Show # Maps - 15+
   MinimapIcon 0 Red Star
   PlayEffect Red
 
-Show # Maps - 14+ rare
+Show # Maps - 13-14
   Class "Waystones"
-  Rarity Rare
-  WaystoneTier >= 14
-  SetFontSize 35
-
-Hide # Maps - Hide 1-14 - all
-  Class "Waystones"
-  Rarity <= Rare
-  AreaLevel >= 65
+  WaystoneTier >= 13
   WaystoneTier <= 14
-  SetFontSize 35
+  SetFontSize 45
+  MinimapIcon 1 Red Diamond
+  PlayEffect Red
 
-Show # Maps - 11-14
+Show # Maps - 11-12
   Class "Waystones"
+  WaystoneTier >= 11
+  WaystoneTier <= 12
   SetFontSize 45
   MinimapIcon 2 Red Square
   PlayEffect Red
@@ -335,17 +343,21 @@ Show # Maps - Tablet (Tower Items)
   PlayEffect Orange
 
 ### Trials
-Hide # Trials - Ultimatum
+Show # Trials - Ultimatum
   BaseType "Ultimatum"
   SetFontSize 35
+  MinimapIcon 2 Orange Circle
+  PlayEffect Orange
 
-Hide # Trials - Ultimatum
+Show # Trials - Ultimatum
   BaseType "Djinn"
   SetFontSize 35
+  MinimapIcon 2 Orange Circle
+  PlayEffect Orange
 
 ### Normal->Rare
 # Show # Normal->Rare - Highlights
-#   BaseType "Omen Sceptre"
+#   BaseType "Omen Sceptre" "Expert Bombard Crossbow"
 #   ItemLevel >= 81
 #   SetFontSize 45
 #   MinimapIcon 0 Purple Star
@@ -369,11 +381,10 @@ Show # Normal->Rare - Relic
   Rarity <= Rare
   SetFontSize 45
 
-# Show # Normal->Rare - Rings
-#   BaseType "Breach Ring" "Pearl Ring" "Prismatic Ring" "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Amethyst Ring"
-#   ItemLevel >= 75
-#   SetFontSize 45
-#   MinimapIcon 2 Purple Circle
+Show # Normal->Rare - Seaglass Spear
+  BaseType "Seaglass Spear"
+  SetFontSize 45
+  MinimapIcon 2 Purple Circle
 
 # Show # Normal->Rare - Amus
 #   BaseType "Bloodstone Amulet" "Lunar Amulet" "Stellar Amulet" "Amber Amulet" "Lapis Amulet"
@@ -381,58 +392,53 @@ Show # Normal->Rare - Relic
 #   SetFontSize 45
 #   MinimapIcon 2 Purple Circle
 
-Hide # Normal->Rare - Charms
-  Class "Charm"
-  AreaLevel >= 65
-  SetFontSize 35
-
 Show # Normal->Rare - Charms
   Class "Charm"
   SetFontSize 35
 
-Hide # Normal->Rare - Flasks - 75+
+Hide # Normal->Rare - Flasks - 65+
   Class == "Life Flasks" "Mana Flasks"
   Rarity <= Magic
-  AreaLevel >= 75
+  AreaLevel >= 65
   DisableDropSound True
 
 Hide # Normal->Rare - Flasks - 15-
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType "Lesser" "Medium"
+  Class == "Life Flasks" "Mana Flasks"
+  BaseType "Lesser" "Medium"
   Rarity <= Magic
-	AreaLevel >= 15
-	DisableDropSound True
+  AreaLevel >= 15
+  DisableDropSound True
 
 Hide # Normal->Rare - Flasks - 30-
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType "Grand" "Greater"
+  Class == "Life Flasks" "Mana Flasks"
+  BaseType "Grand" "Greater"
   Rarity <= Magic
-	AreaLevel >= 30
-	DisableDropSound True
+  AreaLevel >= 30
+  DisableDropSound True
 
 Hide # Normal->Rare - Flasks - 42-
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType "Colossal" "Giant"
+  Class == "Life Flasks" "Mana Flasks"
+  BaseType "Colossal" "Giant"
   Rarity <= Magic
-	AreaLevel >= 42
-	DisableDropSound True
+  AreaLevel >= 42
+  DisableDropSound True
 
 Hide # Normal->Rare - Flasks - 52-
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType "Gargantuan"
+  Class == "Life Flasks" "Mana Flasks"
+  BaseType "Gargantuan"
   Rarity <= Magic
-	AreaLevel >= 52
-	DisableDropSound True
+  AreaLevel >= 52
+  DisableDropSound True
 
 Hide # Normal->Rare - Flasks - 62-
-	Class == "Life Flasks" "Mana Flasks"
-	BaseType "Transcendent"
+  Class == "Life Flasks" "Mana Flasks"
+  BaseType "Transcendent"
   Rarity <= Magic
-	AreaLevel >= 62
-	DisableDropSound True
+  AreaLevel >= 62
+  DisableDropSound True
 
 Show # Normal->Rare - Flasks - 62-
-	Class == "Life Flasks" "Mana Flasks"
+  Class == "Life Flasks" "Mana Flasks"
   Rarity <= Magic
 
 ### Chance
@@ -443,31 +449,6 @@ Show # Chance
   SetFontSize 45
 
 ### Rare
-# Hide # Rare - 65+
-#   Class  "Staves" "Staff" "Mace" "Bow" "Crossbow" "Shields"
-#   AreaLevel >= 65
-#   Rarity Rare
-#   SetFontSize 35
-
-# Show # Rare - ES
-# 	BaseEnergyShield > 0
-# 	BaseEvasion 0
-# 	BaseArmour 0
-#   BaseType "Expert"
-# 	Rarity Rare
-# 	Class "Body Armours" "Boots" "Gloves" "Helmets"
-#   Identified false
-#   AreaLevel >= 65
-#   SetFontSize 35
-#   MinimapIcon 2 Yellow Circle
-#   PlayEffect Yellow
-
-# Hide # Rare - show
-#   BaseType "Withered Wand" "Bone Wand"
-#   Rarity Rare
-#   Identified false
-#   SetFontSize 35
-
 Show # Rare - show
   Class "Jewel" "Rings" "Amulets" "Focus" "Wands" "Sceptres"
   Rarity Rare
@@ -478,31 +459,46 @@ Show # Rare - show
 
 Show # Rare - T1
   Rarity Rare
-	Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
-	BaseType == "Aegis Quarterstaff" "Ancient Buckler" "Attuned Wand" "Barbed Bracers" "Champion Helm" "Chiming Staff" "Conjurer Mantle" "Cultist Gauntlets" "Dastard Armour" "Death Mail" "Death Mantle" "Desolate Crossbow" "Divine Crown" "Dragonscale Boots" "Falconer's Jacket" "Fanatic Greathammer" "Flowing Raiment" "Flying Spear" "Fortress Sabatons" "Gemini Bow" "Gleaming Cuffs" "Grand Spear" "Kamasan Tiara" "Marauding Mace" "Massive Greathammer" "Omen Sceptre" "Ornate Plate" "Paragon Greathelm" "Primed Quiver" "Quickslip Shoes" "Rambler Jacket" "Rattling Sceptre" "Razor Quarterstaff" "Sacramental Robe" "Sacred Focus" "Sandsworn Sandals" "Shrouded Mail" "Siege Crossbow" "Siphoning Wand" "Sleek Jacket" "Slipstrike Vest" "Soaring Mask" "Soaring Targe" "Soldier Cuirass" "Spiked Spear" "Stalking Spear" "Swiftstalker Coat" "Trapper Hood" "Utzaal Cuirass" "Vaal Crest Shield" "Vaal Gloves" "Vaal Greaves" "Vaal Mitts" "Vaal Tower Shield" "Vaal Wraps" "Vile Robe" "Voltaic Staff" "Warlock Leggings" "Wolfskin Mantle" "Wyrmscale Coat"
+  Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
+  BaseType == "Aegis Quarterstaff" "Ancient Buckler" "Attuned Wand" "Barbed Bracers" "Champion Helm" "Chiming Staff" "Conjurer Mantle" "Cultist Gauntlets" "Dastard Armour" "Death Mail" "Death Mantle" "Desolate Crossbow" "Divine Crown" "Dragonscale Boots" "Falconer's Jacket" "Fanatic Greathammer" "Flowing Raiment" "Flying Spear" "Fortress Sabatons" "Gemini Bow" "Gleaming Cuffs" "Grand Spear" "Kamasan Tiara" "Marauding Mace" "Massive Greathammer" "Omen Sceptre" "Ornate Plate" "Paragon Greathelm" "Primed Quiver" "Quickslip Shoes" "Rambler Jacket" "Rattling Sceptre" "Razor Quarterstaff" "Sacramental Robe" "Sacred Focus" "Sandsworn Sandals" "Shrouded Mail" "Siege Crossbow" "Siphoning Wand" "Sleek Jacket" "Slipstrike Vest" "Soaring Mask" "Soaring Targe" "Soldier Cuirass" "Spiked Spear" "Stalking Spear" "Swiftstalker Coat" "Trapper Hood" "Utzaal Cuirass" "Vaal Crest Shield" "Vaal Gloves" "Vaal Greaves" "Vaal Mitts" "Vaal Tower Shield" "Vaal Wraps" "Vile Robe" "Voltaic Staff" "Warlock Leggings" "Wolfskin Mantle" "Wyrmscale Coat"
   SetFontSize 35
   MinimapIcon 2 Yellow Square
   PlayEffect Yellow
 
 Show # Rare - T2
-	Rarity Rare
-	Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
-	BaseType == "Ancient Cuffs" "Apostle Leggings" "Baroque Targe" "Bound Cuffs" "Bound Sandals" "Brigand Mask" "Bulwark Greaves" "Cavalry Boots" "Ceremonial Robe" "Charmed Shoes" "Cinched Boots" "Commander Gauntlets" "Cryptic Helm" "Desert Cap" "Druidic Crown" "Druidic Focus" "Elegant Wraps" "Faithful Leggings" "Faridun Mask" "Flexed Crossbow" "Fortified Hammer" "Fortress Tower Shield" "Gelid Staff" "Gemini Crossbow" "Golden Mail" "Grand Bracers" "Grim Gloves" "Guardian Bow" "Gutspike Buckler" "Hawker's Jacket" "Heartcarver Mantle" "Intricate Crest Shield" "Ironwood Greathammer" "Knightly Mitts" "Leyline Focus" "Lizardscale Coat" "Lunar Quarterstaff" "Luxurious Slippers" "Mammoth Targe" "Masked Greathelm" "Noble Sabatons" "Opulent Gloves" "Orichalcum Spear" "Ornate Buckler" "Ornate Greaves" "Ornate Mitts" "Penetrating Quiver" "Pronged Spear" "Pyrophyte Staff" "Royal Tower Shield" "Saintly Crown" "Sekheman Crest Shield" "Skycrown Tiara" "Sorcerous Tiara" "Stalking Bracers" "Steelmail Gauntlets" "Stoic Sceptre" "Stone Cuirass" "Strife Pick" "Striking Quarterstaff" "Veteran Sabatons" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Wanderer Shoes" "War Wraps" "Warded Helm" "Warmonger Bow" "Warmonger Greathelm" "Withered Wand" "Woven Cap"
+  Rarity Rare
+  Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
+  BaseType == "Ancient Cuffs" "Apostle Leggings" "Baroque Targe" "Bound Cuffs" "Bound Sandals" "Brigand Mask" "Bulwark Greaves" "Cavalry Boots" "Ceremonial Robe" "Charmed Shoes" "Cinched Boots" "Commander Gauntlets" "Cryptic Helm" "Desert Cap" "Druidic Crown" "Druidic Focus" "Elegant Wraps" "Faithful Leggings" "Faridun Mask" "Flexed Crossbow" "Fortified Hammer" "Fortress Tower Shield" "Gelid Staff" "Gemini Crossbow" "Golden Mail" "Grand Bracers" "Grim Gloves" "Guardian Bow" "Gutspike Buckler" "Hawker's Jacket" "Heartcarver Mantle" "Intricate Crest Shield" "Ironwood Greathammer" "Knightly Mitts" "Leyline Focus" "Lizardscale Coat" "Lunar Quarterstaff" "Luxurious Slippers" "Mammoth Targe" "Masked Greathelm" "Noble Sabatons" "Opulent Gloves" "Orichalcum Spear" "Ornate Buckler" "Ornate Greaves" "Ornate Mitts" "Penetrating Quiver" "Pronged Spear" "Pyrophyte Staff" "Royal Tower Shield" "Saintly Crown" "Sekheman Crest Shield" "Skycrown Tiara" "Sorcerous Tiara" "Stalking Bracers" "Steelmail Gauntlets" "Stoic Sceptre" "Stone Cuirass" "Strife Pick" "Striking Quarterstaff" "Veteran Sabatons" "Visceral Quiver" "Volant Quiver" "Volatile Wand" "Wanderer Shoes" "War Wraps" "Warded Helm" "Warmonger Bow" "Warmonger Greathelm" "Withered Wand" "Woven Cap"
   SetFontSize 35
   MinimapIcon 2 Yellow Square
   PlayEffect Yellow
 
-Hide # Rare - all Identified - 65+
+Hide # Rare - all Identified - 75+
   Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
   Rarity Rare
-  AreaLevel >= 65
+  AreaLevel >= 75
   Identified true
   SetFontSize 35
 
-Hide # Rare - all
+Show # Rare - all Identified
   Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
   Rarity Rare
   SetFontSize 35
+
+Show # Rare - all Unid - 75+
+  Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
+  Rarity Rare
+  AreaLevel >= 75
+  Identified false
+  SetFontSize 35
+
+Show # Rare - all Unid
+  Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
+  Rarity Rare
+  Identified false
+  SetFontSize 35
+  MinimapIcon 2 Yellow Circle
+  PlayEffect Yellow
 
 ### Misc
 Show # Misc - Quest Items
@@ -511,28 +507,28 @@ Show # Misc - Quest Items
   MinimapIcon 2 Green Circle
 
 ### Jewelery
-Hide # Jewelery - Rings - area 65+
-  Class "Rings"
-  AreaLevel >= 65
-  SetFontSize 35
+# Hide # Jewelery - Rings - area 75+
+#   Class "Rings"
+#   AreaLevel >= 75
+#   SetFontSize 35
 
 Show # Jewelery - Rings
   Class "Rings"
   SetFontSize 35
 
-Hide # Jewelery - Amulets - area 65+
-  Class "Amulets"
-  AreaLevel >= 65
-  SetFontSize 35
+# Hide # Jewelery - Amulets - area 75+
+#   Class "Amulets"
+#   AreaLevel >= 75
+#   SetFontSize 35
 
 Show # Jewelery - Amulets
   Class "Amulets"
   SetFontSize 35
 
-Hide # Jewelery - Belts - area 65+
-  Class "Belts"
-  AreaLevel >= 65
-  SetFontSize 35
+# Hide # Jewelery - Belts - area 75+
+#   Class "Belts"
+#   AreaLevel >= 75
+#   SetFontSize 35
 
 Show # Jewelery - Belts
   Class "Belts"
@@ -546,10 +542,9 @@ Show # Jewels
   PlayEffect Blue
 
 ### Normal
-Hide # Normal - Charms - 65+
+Show # Normal - Charms
   Rarity Normal
   Class "Charm"
-  AreaLevel >= 65
   SetFontSize 35
 
 Hide # Normal - area 65+
@@ -564,7 +559,7 @@ Show # Normal - Show
   SetFontSize 35
 
 ### Magic
-Hide # Magic - area 75+
+Hide # Magic - area 65+
   Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
   Rarity Magic
   AreaLevel >= 65
