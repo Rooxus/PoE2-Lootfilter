@@ -57,7 +57,7 @@ Show # Currency - Low
 
 Show # Currency - Very Low
   BaseType "Regal Orb" "Lesser Jeweller's Orb"
-  SetFontSize 35
+  SetFontSize 45
 
 Show # Currency - Very Very Low
   BaseType "Scroll of Wisdom" "Transmutation Shard" "Regal Shard" "Artificer's Shard" "Orb of Transmutation" "Orb of Augmentation"
@@ -84,13 +84,13 @@ Show # Currency - Socketable - Runes greater
   BaseType "Greater "
   Class "Socketable"
   SetFontSize 45
-  MinimapIcon 1 White Diamond
+  MinimapIcon 2 White Circle
   PlayEffect White
 
 Show # Currency - Socketable - Runes normal
   BaseType " Rune"
   Class "Socketable"
-  SetFontSize 35
+  SetFontSize 45
 
 Show # Currency - Socketable - Runes lesser
   BaseType "Lesser "
@@ -231,11 +231,6 @@ Show # Gems - Spirit - 19
   SetFontSize 45
   MinimapIcon 1 Green Diamond
   PlayEffect Green
-
-Show # Gems - Spirit - 18-
-  BaseType "Uncut Spirit Gem"
-  ItemLevel <= 18
-  SetFontSize 35
 
 Show # Gems - Spirit
   BaseType "Uncut Spirit Gem"
@@ -422,7 +417,7 @@ Show # Normal->Rare - Flasks - 62-
 
 ### Chance
 Show # Chance
-  BaseType "Stellar Amulet" "Heavy Belt"
+  BaseType "Stellar Amulet" "Heavy Belt" "Solar Amulet" "Rampart Tower Shield"
   Rarity Normal
   MinimapIcon 0 Purple Star
   SetFontSize 45
