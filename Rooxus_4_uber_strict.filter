@@ -81,15 +81,15 @@ Show # Currency - Socketable - Runes greater
   MinimapIcon 2 White Circle
   PlayEffect White
 
+Show # Currency - Socketable - Runes lesser
+  BaseType "Lesser "
+  Class "Socketable"
+  SetFontSize 35
+
 Show # Currency - Socketable - Runes normal
   BaseType " Rune"
   Class "Socketable"
   SetFontSize 45
-
-Hide # Currency - Socketable - Runes lesser
-  BaseType "Lesser "
-  Class "Socketable"
-  SetFontSize 35
 
 Show # Currency - Socketable (other)
   Class "Socketable"
@@ -423,6 +423,12 @@ Show # Rare - show
   MinimapIcon 2 Yellow Square
   PlayEffect Yellow
 
+Hide # Rare - all Identified
+  Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
+  Rarity Rare
+  Identified true
+  SetFontSize 35
+
 Show # Rare - T1
   Rarity Rare
 	Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
@@ -438,12 +444,6 @@ Show # Rare - T2
   SetFontSize 35
   MinimapIcon 2 Yellow Square
   PlayEffect Yellow
-
-Hide # Rare - all Identified
-  Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
-  Rarity Rare
-  Identified true
-  SetFontSize 35
 
 Hide # Rare - all Unid
   Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
