@@ -1,6 +1,6 @@
 ﻿### Unique
 Show # Unique - T1
-  BaseType == "Armoured Cap" "Emerald" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Timeless Jewel" "Time-Lost Diamond" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"
+  BaseType == "Armoured Cap" "Armoured Vest" "Blacksteel Tower Shield" "Embroidered Gloves" "Emerald" "Fine Bracers" "Golden Charm" "Heroic Armour" "Incense Relic" "Intricate Crest Shield" "Ornate Belt" "Ornate Gauntlets" "Ring" "Sapphire" "Silver Charm" "Stone Charm" "Stone Tower Shield" "Ultimate Life Flask" "Ultimate Mana Flask" "Unset Ring"
   Rarity Unique
   SetFontSize 45
   MinimapIcon 0 Pink Star
@@ -8,15 +8,24 @@ Show # Unique - T1
   PlayAlertSound 3 150
 
 Show # Unique - T2
-  BaseType == "Altar Robe" "Burnished Gauntlets" "Conqueror Plate" "Crucible Tower Shield" "Diamond" "Feathered Tiara" "Fine Bracers" "Gold Amulet" "Grand Regalia" "Grand Visage" "Heavy Crown" "Lattice Sandals" "Spiral Wraps" "Trimmed Greaves" "Wyrm Quarterstaff" "Amethyst Ring" "Heavy Belt" "Sapphire Ring" "Stellar Amulet" "Amber Amulet" "Azure Amulet" "Crimson Amulet" "Crude Bow" "Emerald Ring" "Gold Ring" "Jade Amulet" "Lazuli Ring" "Moulded Mitts" "Pearl Ring" "Solar Amulet" "Tribal Mask" "Amphora Relic" "Bloodstone Amulet" "Braced Sabatons" "Brimmed Helm" "Champion Cuirass" "Chiming Staff" "Closed Helm" "Coffer Relic" "Covert Hood" "Cowled Helm" "Crescent Quarterstaff" "Dualstring Bow" "Feathered Sandals" "Gold Circlet" "Grand Cuisses" "Grand Manchettes" "Hunting Shoes" "Iron Greaves" "Iron Ring" "Knight Armour" "Lace Hood" "Lapis Amulet" "Linen Wraps" "Long Quarterstaff" "Lunar Amulet" "Pilgrim Vestments" "Rampart Tower Shield" "Rawhide Belt" "Ruby Ring" "Scale Mail" "Seal Relic" "Secured Leggings" "Shortbow" "Solid Mask" "Spiked Club" "Spined Bracers" "Spired Greathelm" "Stone Greaves" "Suede Bracers" "Tapestry Relic" "Tattered Robe" "Threaded Shoes" "Topaz Ring" "Torment Club" "Vaal Cuirass" "Velour Shoes" "Volatile Wand" "Wrapped Greathelm"
+  BaseType == "Amethyst Charm" "Array Buckler" "Breach Precursor Tablet" "Burnished Gauntlets" "Conqueror Plate" "Coral Circlet" "Diamond" "Expedition Precursor Tablet" "Furtive Wraps" "Garment" "Giant Maul" "Gold Amulet" "Helix Spear" "Jewelled Gloves" "Lattice Sandals" "Magus Tiara" "Overseer Precursor Tablet" "Precursor Tablet" "Rampart Tower Shield" "Ritual Precursor Tablet" "Ruby" "Sacred Focus" "Smuggler Coat" "Spiked Club" "Spiral Wraps" "Spired Greathelm" "Spiritbone Crown" "Thawing Charm" "Time-Lost Diamond" "Timeless Jewel" "Trimmed Greaves" "Utility Belt" "Vase Relic" "Velvet Cap" "Wyrm Quarterstaff"
   Rarity Unique
   SetFontSize 45
-  MinimapIcon 2 Pink Circle
+  MinimapIcon 1 Pink Diamond
+  PlayEffect Pink
+
+Show # Unique - multibase
+  BaseType == "Heavy Belt" "Jade Amulet" "Pearl Ring" "Stellar Amulet" "Amethyst Ring" "Bloodstone Amulet" "Crimson Amulet" "Crude Bow" "Emerald Ring" "Gold Ring" "Lazuli Ring" "Sapphire Ring" "Solar Amulet" "Topaz Ring" "Tribal Mask"
+  Rarity Unique
+  SetFontSize 45
+  MinimapIcon 1 Pink Triangle
   PlayEffect Pink
 
 Show # Unique - others
   Rarity Unique
   SetFontSize 35
+  MinimapIcon 2 Pink Circle
+  PlayEffect Pink
 
 ### Currency
 Show # Currency - Very Very Valuable
