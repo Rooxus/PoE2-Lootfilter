@@ -379,11 +379,6 @@ Show # Normal->Rare - Relic
   Rarity <= Rare
   SetFontSize 45
 
-Show # Normal->Rare - Seaglass Spear
-  BaseType "Seaglass Spear"
-  SetFontSize 45
-  MinimapIcon 2 Purple Circle
-
 # Show # Normal->Rare - Amus
 #   BaseType "Bloodstone Amulet" "Lunar Amulet" "Stellar Amulet" "Amber Amulet" "Lapis Amulet"
 #   ItemLevel >= 75
