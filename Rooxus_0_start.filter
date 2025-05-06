@@ -32,7 +32,7 @@ Show # Currency - Very Very Valuable
   BaseType "Mirror of Kalandra" "Divine Orb" "Perfect Jeweller's Orb" "Soul Core of Azcapa" "Distilled Isolation" "Distilled Suffering" "Greater Essence of Haste" "Omen of Dextral Annulment" "Omen of Dextral Erasure" "Omen of Sinistral Erasure" "Omen of Sinistral Annulment" "Omen of Whittling"
   SetFontSize 45
   SetTextColor 255 000 000 255
-  SetTextColor 255 000 000 255
+  SetBorderColor 255 000 000 255
   MinimapIcon 0 White Star
   PlayEffect White
   PlayAlertSound 5 250
@@ -41,7 +41,7 @@ Show # Currency - Very Valuable
   BaseType "Greater Jeweller's Orb" "Soul Core of Zalatl" "Distilled Fear" "Distilled Despair" "Greater Essence of Sorcery" "Greater Essence of Torment" "Greater Essence of Electricity" "Greater Essence of the Infinite" "Greater Essence of the Mind" "Greater Essence of Enhancement" "Omen of Amelioration" "Omen of Corruption"
   SetFontSize 45
   SetTextColor 255 000 000 255
-  SetTextColor 255 000 000 255
+  SetBorderColor 255 000 000 255
   MinimapIcon 1 White Diamond
   PlayEffect White
   PlayAlertSound 3 150
@@ -148,7 +148,7 @@ Show # Currency - Breachstones
 Show # Currency - Expedition Logbook
   Class "Expedition Logbook"
   SetFontSize 45
-  MinimapIcon 0 Orange Square
+  MinimapIcon 2 Orange Square
   PlayEffect Orange
 
 Show # Currency - Expedition crap
@@ -203,25 +203,30 @@ Show # Currency - Catch all
 Show # Salvage - Quality - Armour
   Class == "Gloves" "Body Armours" "Boots" "Helmets"
   Quality > 0
+  SetBorderColor 255 000 000 255
   SetFontSize 45
 
 Show # Salvage - Quality - Offhands
   Class "Shields" "Foci" "Bucklers"
   Quality > 0
+  SetBorderColor 255 000 000 255
   SetFontSize 45
 
 Show # Salvage - Quality - Caster
   Class  "Wands" "Staff" "Sceptres"
   Quality > 0
+  SetBorderColor 255 000 000 255
   SetFontSize 45
 
 Show # Salvage - Quality - Melee/Ranged
   Class "Spears" "Staves" "Quarterstaves" "Bows" "Crossbows" "One Hand Maces" "Two Hand Maces"
   Quality > 0
+  SetBorderColor 255 000 000 255
   SetFontSize 45
 
 Show # Salvage - Sockets - area 64-
   Sockets > 0
+  SetBorderColor 255 000 000 255
   AreaLevel <= 65
   SetFontSize 45
 
@@ -354,10 +359,11 @@ Show # Trials - Ultimatum
 #   PlayEffect Purple
 
 Show # Normal->Rare - Rings
-  BaseType "Breach Ring"
-  ItemLevel >= 75
+  BaseType "Breach Ring" "Amethyst Charm"
+  SetBorderColor 255 000 000 255
   SetFontSize 45
-  MinimapIcon 2 Purple Circle
+  MinimapIcon 2 Blue Square
+  PlayEffect Blue
 
 Show # Normal->Rare - Relic
   BaseType "Relic"
@@ -374,10 +380,10 @@ Show # Normal->Rare - Charms
   Class "Charm"
   SetFontSize 35
 
-Hide # Normal->Rare - Flasks - 75+
+Hide # Normal->Rare - Flasks - 65+
   Class == "Life Flasks" "Mana Flasks"
   Rarity <= Magic
-  AreaLevel >= 75
+  AreaLevel >= 65
   DisableDropSound True
 
 Hide # Normal->Rare - Flasks - 15-
@@ -472,16 +478,19 @@ Show # Misc - Quest Items
   MinimapIcon 2 Green Circle
 
 ### Jewelery
-
 Show # Jewelery - Rings
   Class "Rings"
   Rarity Normal
   SetFontSize 35
+  MinimapIcon 2 Purple Circle
+  PlayEffect Purple
 
 Show # Jewelery - Amulets
   Class "Amulets"
   Rarity Normal
   SetFontSize 35
+  MinimapIcon 2 Purple Circle
+  PlayEffect Purple
 
 Show # Jewelery - Belts
   Class "Belts"
@@ -501,6 +510,12 @@ Show # Normal - Charms
   Class "Charm"
   SetFontSize 35
 
+Show # Normal - Body
+  BaseType "Vaal Cuirass" "Barbarian Plate" "Rugged Cuirass" "Elegant Plate" "Soldier Cuirass"
+  Rarity Normal
+  MinimapIcon 0 Purple Star
+  SetFontSize 45
+
 Hide # Normal - area 65+
   Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
   Rarity Normal
@@ -513,11 +528,33 @@ Show # Normal - Show
   SetFontSize 35
 
 ### Magic
+Show # Magic - area 65+
+  Class == "Two Hand Maces"
+  Rarity Magic
+  SetBorderColor 255 000 000 255
+  SetFontSize 45
+  MinimapIcon 2 Blue Square
+  PlayEffect Blue
+
 Hide # Magic - area 65+
   Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
   Rarity Magic
   AreaLevel >= 65
   SetFontSize 35
+
+Show # Jewelery - Rings
+  Class "Rings"
+  Rarity Magic
+  SetFontSize 35
+  MinimapIcon 2 Purple Circle
+  PlayEffect Purple
+
+Show # Jewelery - Amulets
+  Class "Amulets"
+  Rarity Magic
+  SetFontSize 35
+  MinimapIcon 2 Purple Circle
+  PlayEffect Purple
 
 Show # Magic - all
   Rarity Magic

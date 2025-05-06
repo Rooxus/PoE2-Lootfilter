@@ -142,7 +142,7 @@ Show # Currency - Breachstones
 Show # Currency - Expedition Logbook
   Class "Expedition Logbook"
   SetFontSize 45
-  MinimapIcon 0 Orange Square
+  MinimapIcon 2 Orange Square
   PlayEffect Orange
 
 Hide # Currency - Expedition crap
