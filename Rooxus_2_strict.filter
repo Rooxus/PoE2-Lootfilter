@@ -450,7 +450,6 @@ Show # Rare - all Identified
 Show # Rare - Maces
   Class == "One Hand Maces" "Two Hand Maces"
   Rarity Rare
-  BaseArmour > 150
   SetFontSize 35
   MinimapIcon 0 Yellow Star
   PlayEffect Yellow
@@ -546,6 +545,14 @@ Show # Normal - Armour bases 120+
   BaseArmour > 120
   SetFontSize 35
 
+Show # Magic - Two Hand Maces
+  Class == "Two Hand Maces"
+  Rarity Normal
+  SetBorderColor 255 000 000 255
+  SetFontSize 45
+  MinimapIcon 2 Purple Square
+  PlayEffect Purple
+
 Hide # Normal - area 65+
   Class == "Gloves" "Body Armours" "Boots" "Helmets" "Shields" "Foci" "Bucklers" "Spears" "Wands" "Staves" "Sceptres" "One Hand Maces" "Two Hand Maces" "Bows" "Crossbows" "Quivers" "Quarterstaves"
   Rarity Normal
@@ -558,7 +565,7 @@ Show # Normal - Show
   SetFontSize 35
 
 ### Magic
-Show # Magic - area 65+
+Show # Magic - Two Hand Maces
   Class == "Two Hand Maces"
   Rarity Magic
   SetBorderColor 255 000 000 255
